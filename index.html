@@ -860,7 +860,8 @@
         autorizados</strong> e <strong>danos</strong>.<br>
       É imprescindível, portanto, a adoção de condutas, normas e<br>
       procedimentos padronizados que tenham como objetivo garantir a proteção dos três<br>
-      aspectos básicos da segurança da informação:</p>
+      aspectos básicos da segurança da informação:
+    </p>
     <ul>
       <li>confidencialidade.</li>
       <li>integridade.</li>
@@ -2069,37 +2070,17 @@
     //      we can remove the following lines.
 
 
-    var MERMAID_CONFIG = ({ "startOnLoad": false });
-    if (typeof MERMAID_CONFIG !== 'undefined') {
-      MERMAID_CONFIG.startOnLoad = false
-      MERMAID_CONFIG.cloneCssStyles = false
-      MERMAID_CONFIG.theme = "default"
-    }
-
-    mermaid.initialize(MERMAID_CONFIG || {})
-    if (typeof (window['Reveal']) !== 'undefined') {
-      function mermaidRevealHelper(event) {
-        var currentSlide = event.currentSlide
-        var diagrams = currentSlide.querySelectorAll('.mermaid')
-        for (var i = 0; i < diagrams.length; i++) {
-          var diagram = diagrams[i]
-          if (!diagram.hasAttribute('data-processed')) {
-            mermaid.init(null, diagram, () => {
-              Reveal.slide(event.indexh, event.indexv)
-            })
-          }
-        }
+    var config = {
+      startOnReady: true,
+      theme: 'forest',
+      flowchart: {
+        useMaxWidth: false,
+        htmlLabels: true
       }
-      Reveal.addEventListener('slidetransitionend', mermaidRevealHelper)
-      Reveal.addEventListener('ready', mermaidRevealHelper)
-      await mermaid.run({
-        nodes: document.querySelectorAll('.mermaid')
-      })
-    } else {
-      await mermaid.run({
-        nodes: document.querySelectorAll('.mermaid')
-      })
-    }
+    };
+    mermaid.initialize(config);
+    mermaid.init(undefined, '.language-mermaid');
+
   </script>
 
 
