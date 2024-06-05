@@ -7,6 +7,11 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 
+  <script type="module">
+    import mermaid from 'https://cdn.jsdelivr.net/npm/mermaid@10/dist/mermaid.esm.min.mjs';
+    mermaid.initialize({ startOnLoad: true });
+  </script>
+
   <style>
     code[class*=language-],
     pre[class*=language-] {
@@ -1156,12 +1161,15 @@
     </ul>
     <p><strong>Ciclo de Vida da Informação.</strong></p>
     <p>Garantir que a informação seja corretamente classificada e rotulada no momento da criação.</p>
-    <div class="mermaid"> graph LR;
-      Criação --&gt;Armazenamento;
-      Armazenamento --&gt; Criptografia;
-      Armazenamento --&gt;nodeId[(Dados Persistentes)];
-      Criptografia --&gt; Transmissão --&gt; Descarte;
-      Transmissão --&gt; nodeId;
+    <div class="mermaid">
+
+      graph LR;
+      Criação --> Armazenamento;
+      Armazenamento --> Criptografia;
+      Armazenamento -->nodeId[(Dados Persistentes)];
+      Criptografia --> Transmissão --> Descarte;
+      Transmissão --> nodeId;
+
     </div>
     <p><strong>Criação</strong>: Garantir que a informação seja corretamente classificada e rotulada no momento da
       criação.</p>
@@ -1205,8 +1213,8 @@
     <p>O cesso fisico e Feito em Etapas e é segmentado em tada a empressa.</p>
     <p>Temos dois blocos de acesso quais chamamos de Predio e Galpão com seus setores.</p>
     <p><strong>Galpão:</strong></p>
-    <div class="mermaid">block-beta
-
+    <div class="mermaid">
+      block-beta
       columns 4
 
       refeitorio Docas:3
@@ -1215,7 +1223,8 @@
 
     </div>
     <p><strong>Predio:</strong></p>
-    <div class="mermaid">block-beta
+    <div class="mermaid">
+      block-beta
       columns 4
       TI:2
       Direção:2
@@ -1226,7 +1235,8 @@
     <p><strong>Visão Geral.</strong></p>
     <p>O controle de acesso principal sera na entrada ou Portaria<br>
       onde apos a validação sera liberado o acesso ao funiconario.</p>
-    <div class="mermaid">block-beta
+    <div class="mermaid">
+      block-beta
       columns 4
       Catraca:1
       Portaria:2
@@ -2062,26 +2072,6 @@
 
 
 
-
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/mermaid/8.0.0/mermaid.min.js"></script>
-
-  <script type="module">
-    // TODO: If ZenUML gets integrated into mermaid in the future,
-    //      we can remove the following lines.
-
-
-    var config = {
-      startOnReady: true,
-      theme: 'forest',
-      flowchart: {
-        useMaxWidth: false,
-        htmlLabels: true
-      }
-    };
-    mermaid.initialize(config);
-    mermaid.init(undefined, '.language-mermaid');
-
-  </script>
 
 
 
