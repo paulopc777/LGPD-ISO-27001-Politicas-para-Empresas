@@ -11,8 +11,35 @@
     import mermaid from 'https://cdn.jsdelivr.net/npm/mermaid@10/dist/mermaid.esm.min.mjs';
     mermaid.initialize({ startOnLoad: true });
   </script>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+    integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+    integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
+    integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+    crossorigin="anonymous"></script>
 
   <style>
+    a {
+      display: block;
+    }
+
+    body.dark-mode {
+      background-color: #161b22;
+      color: #e6edf3;
+      transition: all .7s ease-in-out;
+    }
+
+    body.light-mode {
+      background-color: white;
+      color: black;
+      transition: all .7s ease-in-out;
+    }
+
     code[class*=language-],
     pre[class*=language-] {
       color: #333;
@@ -260,7 +287,7 @@
       line-height: 1.2;
       margin-top: 1em;
       margin-bottom: 16px;
-      color: #000
+
     }
 
     html body h1 {
@@ -311,9 +338,7 @@
       color: #5c5c5c
     }
 
-    html body strong {
-      color: #000
-    }
+
 
     html body del {
       color: #5c5c5c
@@ -425,9 +450,17 @@
       word-break: keep-all
     }
 
+    .mermaid{
+      background-color: white;
+      border-radius: 10px;
+      padding: 1rem;
+      display: flex;
+      justify-content: center;
+    }
+
     html body table th {
       font-weight: 700;
-      color: #000
+
     }
 
     html body table td,
@@ -845,6 +878,7 @@
     /* Please visit the URL below for more information: */
     /*   https://shd101wyy.github.io/markdown-preview-enhanced/#/customize-css */
   </style>
+
   <!-- The content below will be included at the end of the <head> element. -->
   <script type="text/javascript">
     document.addEventListener("DOMContentLoaded", function () {
@@ -858,7 +892,166 @@
 
   <div class="crossnote markdown-preview  ">
 
+    <div class="d-flex justify-content-between align-items-center">
+      <div class="form-check form-switch">
+        <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckDefault">
+        <label class="form-check-label" for="flexSwitchCheckDefault">Dark Mode</label>
+      </div>
+
+      <a class="btn btn-primary mb-" data-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false"
+        aria-controls="collapseExample">
+        Indice
+      </a>
+    </div>
+
+    <hr>
     <h1 id="politica-de-segurança-de-informação">Politica de Segurança de informação </h1>
+    <hr>
+
+
+    <div class="collapse " id="collapseExample">
+
+      <a href="#dispositivos-movel-e-teeltrabalho"> A.6.2 Dispositivos movel e Teeltrabalho.</a>
+
+      <a href="#a712-termos-e-condiçoes-de-contratação"> A.7.1.2 Termos e condiçoes de contratação.</a>
+
+      <a href="#a722-trinamentos"> A.7.2.2 Trinamentos</a>
+
+
+      <a href="#porteção-e-controle-de-ativos">A.8.1.1 A tivos</a>
+      <ul>
+        <li> Inventatio</li>
+        <li>Porprietario</li>
+        <li>Uso aceitavel</li>
+        <li> Devolução</li>
+      </ul>
+
+      <a href="#rotulos-e-tratamento"> A.8.2 Rotulos e tratamento
+      </a>
+
+      <a href="#tratamento-de-mídias-removíveis"> A.8.3 Tratamento de midas removiveis
+      </a>
+      <ul>
+        <li>Gerenciamento</li>
+        <li>Descarte</li>
+        <li>Transferencia</li>
+      </ul>
+
+
+
+
+
+      <a href="#politica-de-controle-de-acesso-fisico"> A.9.1.1 Politica de controle de acesso Fisico
+      </a>
+
+      <a href="#A.9.3."> A.9.2 Gerenciamento de Usuario
+      </a>
+
+      <ul>
+        <li> registro cancelamento
+        </li>
+        <li> Acesso do usuario
+        </li>
+        <li> Acessos privilegiados
+        </li>
+        <li> Altenticação de Usuario
+        </li>
+        <li> retirada ou ajuste de acesso
+        </li>
+      </ul>
+
+      <a href="#politica-de-controle-de-acesso-fisico"> A.11.1 Suguranca fisica do ambiente
+      </a>
+
+      <ul>
+        <li> Areas seguras
+        </li>
+        <li> Controle de entrada
+        </li>
+        <li>Perimetro</li>
+        <li> tipos para escritorio ,sala instalações
+        </li>
+        <li> Porteção contra ambiental
+        </li>
+        <li> Areas de entraga de carregamento
+        </li>
+      </ul>
+
+
+      <a href="#respomsabilidade-do-usuario"> A.9.3 Respomsabilidade do Usuario
+      </a>
+
+      <a href="acesso-a-rede-servicos-de-rede"> A.9.1.2 Acesso a rede servicos de rede
+      </a>
+
+      <a href="acesso-a-aplicações-de-rede-rap">A.9.4 Acesso a Aplicações de rede
+      </a>
+
+      <ul>
+        <li>restrição a infomação</li>
+        <li>entradano sistema login</li>
+        <li>sistema de senhas</li>
+      </ul>
+
+      <a href="#segurança-de-rede"> A.13.1 Segurança de rede
+      </a>
+
+      <ul>
+        <li> Controle da rede
+        </li>
+        <li> Segurança do serviço da rede
+        </li>
+        <li> segregação de rede
+        </li>
+      </ul>
+
+      <a href="#Segurança"> A.11.2 Segurança dos equipamentos
+      </a>
+
+      <ul>
+        <li> Segurança dos cabos
+        </li>
+        <li> Manutenção de equpamentos
+        </li>
+        <li> Remoção dos ativos
+        </li>
+        <li> reutilização ou descarrte
+        </li>
+        <li> equipamentos sem monitoração
+        </li>
+      </ul>
+
+      <a href="#procedimento-operacionais"> A.12.1 procedimento operacionais
+      </a>
+
+      <small>Separação de desenvolvimento teste e produção</small>
+
+      <a href="#poreteção-contra-malware"> A.12.2 Poreteção contra malware
+      </a>
+      <a href="#copias-de-segurança-das-infromaçoes"> A.12.3 Copias de segurança das infromaçoes</a>
+
+      <a href="#registro-e-monitoramento"> A.12.3 Registro e monitoramento
+      </a>
+
+      <ul>
+        <li>Regiustro de eventos
+        </li>
+        <li> Porteção de logs
+        </li>
+        <li> logs do administrador e operador
+        </li>
+        <li>Sincronização de relogios</li>
+      </ul>
+
+
+      <a href="controle-de-softwares-operacionais"> A.12.5 Controle de softwares operacionais
+      </a>
+      <a href="#restriçoes-para-instalação-de-software"> A.12.6.2 Restriçoes para instalação de software</a>
+      <a href="#vulnerabilidae-tecnica">A.12.6.1 Vulnerabilidae Tecnica</a>
+
+      <hr>
+    </div>
+
     <p>
       Toda empresa deve se adquar ao regras e padroes,devendo ser adequadamente utilizado e protegido contra
       <strong>riscos</strong>, <strong>ameaças</strong>, <strong>violações</strong>, <strong>acessos não
@@ -1273,7 +1466,7 @@
     </ul>
     <p>Terão reconehcimento facil + biometria para maior segurança:</p>
     <p><img src="./img/Senior_Montagem-2%20(1).jpg" alt="Alternate text"></p>
-    <p><strong>A.9.3.</strong></p>
+    <p id="A.9.3."><strong>A.9.3.</strong></p>
     <p>Os funcionários estão obrigados a seguir as condutas de segurança listadas a seguir:</p>
     <ul>
       <li>
@@ -1619,10 +1812,14 @@
       <li>
         <p>Limitação de Conexões Simultâneas: Restringir o número de conexões simultâneas<br>
           permitidas por usuário para reduzir o risco de acessos não autorizados.<br>
-          A.11.2 Segurança dos equipamentos:<br>
-          Segurança dos Cabos</p>
+        </p>
       </li>
     </ul>
+    <h1 id="Segurança">Segurança dos equipamentos<br>
+    </h1>
+
+    <p><strong>A.11.2</strong></p>
+
     <p><strong>Organização e Gestão de Cabos:</strong></p>
     <ul>
       <li>
@@ -2072,7 +2269,36 @@
 
 
 
+  <script>
+    const checkbox = document.getElementById('flexSwitchCheckDefault');
 
+    function setMode(isDark) {
+
+      if (isDark) {
+        document.body.classList.add('dark-mode');
+        document.body.classList.remove('light-mode');
+        checkbox.checked = true;
+      } else {
+        document.body.classList.add('light-mode');
+        document.body.classList.remove('dark-mode');
+        checkbox.checked = false;
+      }
+    } 
+
+    const savedMode = localStorage.getItem('darkMode');
+    if (savedMode) {
+      setMode(savedMode === 'true');
+    } else {
+      setMode(false); 
+    }
+
+    checkbox.addEventListener('change', () => {
+      const isDarkMode = checkbox.checked;
+      setMode(isDarkMode);
+      localStorage.setItem('darkMode', isDarkMode);
+    });
+
+  </script>
 
 
 
