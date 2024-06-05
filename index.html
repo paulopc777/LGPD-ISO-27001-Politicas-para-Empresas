@@ -1,1201 +1,2110 @@
-<!DOCTYPE html><html><head>
-      <title>NewIndex</title>
-      <meta charset="utf-8">
-      <meta name="viewport" content="width=device-width, initial-scale=1.0">
-      
-      <link rel="stylesheet" href="file:///c:\Users\CEDTEC - ALUNO\.vscode\extensions\shd101wyy.markdown-preview-enhanced-0.8.13\crossnote\dependencies\katex\katex.min.css">
-      
-      
-      <script type="text/javascript" src="file:///c:\Users\CEDTEC - ALUNO\.vscode\extensions\shd101wyy.markdown-preview-enhanced-0.8.13\crossnote\dependencies\mermaid\mermaid.min.js" charset="UTF-8"></script>
-      
-      
-      <style>
-      code[class*=language-],pre[class*=language-]{color:#333;background:0 0;font-family:Consolas,"Liberation Mono",Menlo,Courier,monospace;text-align:left;white-space:pre;word-spacing:normal;word-break:normal;word-wrap:normal;line-height:1.4;-moz-tab-size:8;-o-tab-size:8;tab-size:8;-webkit-hyphens:none;-moz-hyphens:none;-ms-hyphens:none;hyphens:none}pre[class*=language-]{padding:.8em;overflow:auto;border-radius:3px;background:#f5f5f5}:not(pre)>code[class*=language-]{padding:.1em;border-radius:.3em;white-space:normal;background:#f5f5f5}.token.blockquote,.token.comment{color:#969896}.token.cdata{color:#183691}.token.doctype,.token.macro.property,.token.punctuation,.token.variable{color:#333}.token.builtin,.token.important,.token.keyword,.token.operator,.token.rule{color:#a71d5d}.token.attr-value,.token.regex,.token.string,.token.url{color:#183691}.token.atrule,.token.boolean,.token.code,.token.command,.token.constant,.token.entity,.token.number,.token.property,.token.symbol{color:#0086b3}.token.prolog,.token.selector,.token.tag{color:#63a35c}.token.attr-name,.token.class,.token.class-name,.token.function,.token.id,.token.namespace,.token.pseudo-class,.token.pseudo-element,.token.url-reference .token.variable{color:#795da3}.token.entity{cursor:help}.token.title,.token.title .token.punctuation{font-weight:700;color:#1d3e81}.token.list{color:#ed6a43}.token.inserted{background-color:#eaffea;color:#55a532}.token.deleted{background-color:#ffecec;color:#bd2c00}.token.bold{font-weight:700}.token.italic{font-style:italic}.language-json .token.property{color:#183691}.language-markup .token.tag .token.punctuation{color:#333}.language-css .token.function,code.language-css{color:#0086b3}.language-yaml .token.atrule{color:#63a35c}code.language-yaml{color:#183691}.language-ruby .token.function{color:#333}.language-markdown .token.url{color:#795da3}.language-makefile .token.symbol{color:#795da3}.language-makefile .token.variable{color:#183691}.language-makefile .token.builtin{color:#0086b3}.language-bash .token.keyword{color:#0086b3}pre[data-line]{position:relative;padding:1em 0 1em 3em}pre[data-line] .line-highlight-wrapper{position:absolute;top:0;left:0;background-color:transparent;display:block;width:100%}pre[data-line] .line-highlight{position:absolute;left:0;right:0;padding:inherit 0;margin-top:1em;background:hsla(24,20%,50%,.08);background:linear-gradient(to right,hsla(24,20%,50%,.1) 70%,hsla(24,20%,50%,0));pointer-events:none;line-height:inherit;white-space:pre}pre[data-line] .line-highlight:before,pre[data-line] .line-highlight[data-end]:after{content:attr(data-start);position:absolute;top:.4em;left:.6em;min-width:1em;padding:0 .5em;background-color:hsla(24,20%,50%,.4);color:#f4f1ef;font:bold 65%/1.5 sans-serif;text-align:center;vertical-align:.3em;border-radius:999px;text-shadow:none;box-shadow:0 1px #fff}pre[data-line] .line-highlight[data-end]:after{content:attr(data-end);top:auto;bottom:.4em}html body{font-family:'Helvetica Neue',Helvetica,'Segoe UI',Arial,freesans,sans-serif;font-size:16px;line-height:1.6;color:#333;background-color:#fff;overflow:initial;box-sizing:border-box;word-wrap:break-word}html body>:first-child{margin-top:0}html body h1,html body h2,html body h3,html body h4,html body h5,html body h6{line-height:1.2;margin-top:1em;margin-bottom:16px;color:#000}html body h1{font-size:2.25em;font-weight:300;padding-bottom:.3em}html body h2{font-size:1.75em;font-weight:400;padding-bottom:.3em}html body h3{font-size:1.5em;font-weight:500}html body h4{font-size:1.25em;font-weight:600}html body h5{font-size:1.1em;font-weight:600}html body h6{font-size:1em;font-weight:600}html body h1,html body h2,html body h3,html body h4,html body h5{font-weight:600}html body h5{font-size:1em}html body h6{color:#5c5c5c}html body strong{color:#000}html body del{color:#5c5c5c}html body a:not([href]){color:inherit;text-decoration:none}html body a{color:#08c;text-decoration:none}html body a:hover{color:#00a3f5;text-decoration:none}html body img{max-width:100%}html body>p{margin-top:0;margin-bottom:16px;word-wrap:break-word}html body>ol,html body>ul{margin-bottom:16px}html body ol,html body ul{padding-left:2em}html body ol.no-list,html body ul.no-list{padding:0;list-style-type:none}html body ol ol,html body ol ul,html body ul ol,html body ul ul{margin-top:0;margin-bottom:0}html body li{margin-bottom:0}html body li.task-list-item{list-style:none}html body li>p{margin-top:0;margin-bottom:0}html body .task-list-item-checkbox{margin:0 .2em .25em -1.8em;vertical-align:middle}html body .task-list-item-checkbox:hover{cursor:pointer}html body blockquote{margin:16px 0;font-size:inherit;padding:0 15px;color:#5c5c5c;background-color:#f0f0f0;border-left:4px solid #d6d6d6}html body blockquote>:first-child{margin-top:0}html body blockquote>:last-child{margin-bottom:0}html body hr{height:4px;margin:32px 0;background-color:#d6d6d6;border:0 none}html body table{margin:10px 0 15px 0;border-collapse:collapse;border-spacing:0;display:block;width:100%;overflow:auto;word-break:normal;word-break:keep-all}html body table th{font-weight:700;color:#000}html body table td,html body table th{border:1px solid #d6d6d6;padding:6px 13px}html body dl{padding:0}html body dl dt{padding:0;margin-top:16px;font-size:1em;font-style:italic;font-weight:700}html body dl dd{padding:0 16px;margin-bottom:16px}html body code{font-family:Menlo,Monaco,Consolas,'Courier New',monospace;font-size:.85em;color:#000;background-color:#f0f0f0;border-radius:3px;padding:.2em 0}html body code::after,html body code::before{letter-spacing:-.2em;content:'\00a0'}html body pre>code{padding:0;margin:0;word-break:normal;white-space:pre;background:0 0;border:0}html body .highlight{margin-bottom:16px}html body .highlight pre,html body pre{padding:1em;overflow:auto;line-height:1.45;border:#d6d6d6;border-radius:3px}html body .highlight pre{margin-bottom:0;word-break:normal}html body pre code,html body pre tt{display:inline;max-width:initial;padding:0;margin:0;overflow:initial;line-height:inherit;word-wrap:normal;background-color:transparent;border:0}html body pre code:after,html body pre code:before,html body pre tt:after,html body pre tt:before{content:normal}html body blockquote,html body dl,html body ol,html body p,html body pre,html body ul{margin-top:0;margin-bottom:16px}html body kbd{color:#000;border:1px solid #d6d6d6;border-bottom:2px solid #c7c7c7;padding:2px 4px;background-color:#f0f0f0;border-radius:3px}@media print{html body{background-color:#fff}html body h1,html body h2,html body h3,html body h4,html body h5,html body h6{color:#000;page-break-after:avoid}html body blockquote{color:#5c5c5c}html body pre{page-break-inside:avoid}html body table{display:table}html body img{display:block;max-width:100%;max-height:100%}html body code,html body pre{word-wrap:break-word;white-space:pre}}.markdown-preview{width:100%;height:100%;box-sizing:border-box}.markdown-preview ul{list-style:disc}.markdown-preview ul ul{list-style:circle}.markdown-preview ul ul ul{list-style:square}.markdown-preview ol{list-style:decimal}.markdown-preview ol ol,.markdown-preview ul ol{list-style-type:lower-roman}.markdown-preview ol ol ol,.markdown-preview ol ul ol,.markdown-preview ul ol ol,.markdown-preview ul ul ol{list-style-type:lower-alpha}.markdown-preview .newpage,.markdown-preview .pagebreak{page-break-before:always}.markdown-preview pre.line-numbers{position:relative;padding-left:3.8em;counter-reset:linenumber}.markdown-preview pre.line-numbers>code{position:relative}.markdown-preview pre.line-numbers .line-numbers-rows{position:absolute;pointer-events:none;top:1em;font-size:100%;left:0;width:3em;letter-spacing:-1px;border-right:1px solid #999;-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none}.markdown-preview pre.line-numbers .line-numbers-rows>span{pointer-events:none;display:block;counter-increment:linenumber}.markdown-preview pre.line-numbers .line-numbers-rows>span:before{content:counter(linenumber);color:#999;display:block;padding-right:.8em;text-align:right}.markdown-preview .mathjax-exps .MathJax_Display{text-align:center!important}.markdown-preview:not([data-for=preview]) .code-chunk .code-chunk-btn-group{display:none}.markdown-preview:not([data-for=preview]) .code-chunk .status{display:none}.markdown-preview:not([data-for=preview]) .code-chunk .output-div{margin-bottom:16px}.markdown-preview .md-toc{padding:0}.markdown-preview .md-toc .md-toc-link-wrapper .md-toc-link{display:inline;padding:.25rem 0}.markdown-preview .md-toc .md-toc-link-wrapper .md-toc-link div,.markdown-preview .md-toc .md-toc-link-wrapper .md-toc-link p{display:inline}.markdown-preview .md-toc .md-toc-link-wrapper.highlighted .md-toc-link{font-weight:800}.scrollbar-style::-webkit-scrollbar{width:8px}.scrollbar-style::-webkit-scrollbar-track{border-radius:10px;background-color:transparent}.scrollbar-style::-webkit-scrollbar-thumb{border-radius:5px;background-color:rgba(150,150,150,.66);border:4px solid rgba(150,150,150,.66);background-clip:content-box}html body[for=html-export]:not([data-presentation-mode]){position:relative;width:100%;height:100%;top:0;left:0;margin:0;padding:0;overflow:auto}html body[for=html-export]:not([data-presentation-mode]) .markdown-preview{position:relative;top:0;min-height:100vh}@media screen and (min-width:914px){html body[for=html-export]:not([data-presentation-mode]) .markdown-preview{padding:2em calc(50% - 457px + 2em)}}@media screen and (max-width:914px){html body[for=html-export]:not([data-presentation-mode]) .markdown-preview{padding:2em}}@media screen and (max-width:450px){html body[for=html-export]:not([data-presentation-mode]) .markdown-preview{font-size:14px!important;padding:1em}}@media print{html body[for=html-export]:not([data-presentation-mode]) #sidebar-toc-btn{display:none}}html body[for=html-export]:not([data-presentation-mode]) #sidebar-toc-btn{position:fixed;bottom:8px;left:8px;font-size:28px;cursor:pointer;color:inherit;z-index:99;width:32px;text-align:center;opacity:.4}html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] #sidebar-toc-btn{opacity:1}html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc{position:fixed;top:0;left:0;width:300px;height:100%;padding:32px 0 48px 0;font-size:14px;box-shadow:0 0 4px rgba(150,150,150,.33);box-sizing:border-box;overflow:auto;background-color:inherit}html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc::-webkit-scrollbar{width:8px}html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc::-webkit-scrollbar-track{border-radius:10px;background-color:transparent}html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc::-webkit-scrollbar-thumb{border-radius:5px;background-color:rgba(150,150,150,.66);border:4px solid rgba(150,150,150,.66);background-clip:content-box}html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc a{text-decoration:none}html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc .md-toc{padding:0 16px}html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc .md-toc .md-toc-link-wrapper .md-toc-link{display:inline;padding:.25rem 0}html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc .md-toc .md-toc-link-wrapper .md-toc-link div,html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc .md-toc .md-toc-link-wrapper .md-toc-link p{display:inline}html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc .md-toc .md-toc-link-wrapper.highlighted .md-toc-link{font-weight:800}html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .markdown-preview{left:300px;width:calc(100% - 300px);padding:2em calc(50% - 457px - 300px / 2);margin:0;box-sizing:border-box}@media screen and (max-width:1274px){html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .markdown-preview{padding:2em}}@media screen and (max-width:450px){html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .markdown-preview{width:100%}}html body[for=html-export]:not([data-presentation-mode]):not([html-show-sidebar-toc]) .markdown-preview{left:50%;transform:translateX(-50%)}html body[for=html-export]:not([data-presentation-mode]):not([html-show-sidebar-toc]) .md-sidebar-toc{display:none}
-/* Please visit the URL below for more information: */
-/*   https://shd101wyy.github.io/markdown-preview-enhanced/#/customize-css */
+<!DOCTYPE html>
+<html>
 
-      </style>
-      <!-- The content below will be included at the end of the <head> element. --><script type="text/javascript">
-  document.addEventListener("DOMContentLoaded", function () {
-    // your code here
-  });
-</script></head><body for="html-export">
-    
-    
-      <div class="crossnote markdown-preview  ">
-      
-<h1 id="politica-de-segurança-de-informação">Politica de Segurança de informação </h1>
-<p>s<br>
-Toda empresa deve se adquar ao regras e padroes,devendo ser adequadamente utilizado e protegido contra <strong>riscos</strong>, <strong>ameaças</strong>, <strong>violações</strong>, <strong>acessos não autorizados</strong> e <strong>danos</strong>.<br>
-É imprescindível, portanto, a adoção de condutas, normas e<br>
-procedimentos padronizados que tenham como objetivo garantir a proteção dos três<br>
-aspectos básicos da segurança da informação:</p>
-<ul>
-<li>confidencialidade.</li>
-<li>integridade.</li>
-<li>disponibilidade.</li>
-</ul>
-<p>Pois tem por objetivo possibilitar o gerenciamento<br>
-da segurança em uma organização, estabelecendo regras e padrões para proteção<br>
-da informação.<br>
-A política possibilita manter a confidencialidade, garantir que a informação<br>
-não seja alterada ou perdida e permitir que a informação esteja disponível quando for necessário.</p>
-<h2 id="politicas-aplicadas">Politicas aplicadas </h2>
-<p><a href="https://www.in.gov.br/materia/-/asset_publisher/Kujrw0TZC2Mb/content/id/56970098/do1-2018-12-27-decreto-n-9-637-de-26-de-dezembro-de-2018-56969938">Política Nacional de Segurança da Informação</a></p>
-<p><a href="https://www.planalto.gov.br/ccivil_03/_ato2011-2014/2014/lei/l12965.htm">Marco Civil da Internet</a></p>
-<h2 id="dispositivos-movel-e-teeltrabalho">Dispositivos movel e Teeltrabalho </h2>
-<h3 id="dispositivos-móveis-ou-uquipamentos-eletronicos">Dispositivos móveis ou uquipamentos eletronicos </h3>
-<p><strong>Anexo A.6.2.1.</strong></p>
-<p>É estritamente proibido o uso de dispositivos móveis de uso pessoal em todos os setores e locais da empresa. Somente aparelhos fornecidos pelo empregador estão autorizados para uso durante o expediente.</p>
-<p>Somente serão tolerados <em>Dispositivos móveis</em> , <em>Notebooks</em> ou <em>Dispositivos Eletronicos</em> pessoais em locais indicados:</p>
-<ul>
-<li>Portaria</li>
-<li>Refeitorio</li>
-<li>Sala de Espera</li>
-<li>Área de descompressão</li>
-<li>Área Indicadas com placas de sinalização</li>
-</ul>
-<h3 id="teletrabalho-ou-trabalho-remoto">Teletrabalho ou Trabalho Remoto </h3>
-<p><strong>Anexo A.6.2.2.</strong></p>
-<p>Todo e qualquer trabalho remoto deve ser comunicado com um aviso prévio de 1 semana para que sejam implementadas as medidas de segurança necessárias para controle de acesso à rede de forma remota.</p>
-<p>O colaborador terá acesso a um dispositivo fornecido pelo empregador, um Notebook Dell Nitro 5, com código de identificação específico, estando acordado entre as partes o seguinte:</p>
-<ul>
-<li>É proibida a instalação ou execução de programas ou aplicações que não tenham sido fornecidos pelo empregador.</li>
-<li>O uso de proxy ou VPNs que não sejam fornecidos pela empresa é estritamente proibido.</li>
-<li>A destruição ou adulteração do sistema operacional do dispositivo será considerada uma conduta antiética, sujeita a penalidades administrativas.</li>
-<li>Não será aceito o uso de dispositivos incompatíveis com o número de série fornecido ou com hardware diferente do especificado.</li>
-<li>O colaborador tem a obrigação de seguir as normas de Segurança da Informação, mesmo durante o trabalho remoto.</li>
-<li>A devolução do aparelho deve ser feita no prazo acordado</li>
-</ul>
-<h2 id="adequação-ou-elaboração-de-cláusulas-contratuais--informativos-para-rh">Adequação ou elaboração de cláusulas contratuais / informativos para RH </h2>
-<h3 id="a712-termos-e-condiçoes-de-contratação">A.7.1.2 Termos e condiçoes de contratação </h3>
-<p>Durante as etapas de recrutamento, seleção e admissão do novo colaborador,podem ser solicitados, informações básicas do profissional, como nome completo, endereço, número de telefone, e-mail, data de nascimento, estado civil, nacionalidade, número de identidade e CPF.</p>
-<p>Possível incluir informações relacionadas à formação acadêmica do candidato, experiência profissional, habilidades, referências, salário anterior e expectativas salariais.</p>
-<p><em>Sem que isso signifique qualquer descumprimento à LGPD.</em></p>
-<p>No entanto, é importante lembrar que a coleta de dados sensíveis, como etnia, religião, orientação sexual, entre outras, é proibida,sem o consentimento co titular, pela lei, a menos que haja uma justificativa legal ou consentimento explicito.</p>
-<details><summary>LGPD Artigo 11,Artigo 12,Artigo 13</summary>
-<p><strong>Artigo 11</strong></p>
-<pre class="language-text">Caput: O tratamento de dados pessoais sensíveis somente pode ocorrer nas seguintes hipóteses:
-</pre>
-<p>I - Quando o titular ou seu responsável legal consentir, de forma específica e destacada, para finalidades específicas.</p>
-<p>II - Sem fornecimento de consentimento do titular, nas hipóteses em que for indispensável para:</p>
-<ul>
-<li>
-<p>cumprimento de obrigação legal ou regulatória pelo controlador;</p>
-</li>
-<li>
-<p>tratamento e uso compartilhado de dados necessários à execução, pela administração pública, de políticas públicas previstas em leis ou regulamentos;</p>
-</li>
-<li>
-<p>realização de estudos por órgão de pesquisa, garantida, sempre que possível, a anonimização dos dados pessoais sensíveis;</p>
-</li>
-<li>
-<p>exercício regular de direitos, inclusive em contrato e em processo judicial, administrativo e arbitral;</p>
-</li>
-<li>
-<p>proteção da vida ou da incolumidade física do titular ou de terceiro;</p>
-</li>
-<li>
-<p>tutela da saúde, exclusivamente, em procedimento realizado por profissionais de saúde, serviços de saúde ou autoridade sanitária;</p>
-</li>
-<li>
-<p>garantia da prevenção à fraude e à segurança do titular, nos processos de identificação e autenticação de cadastro em sistemas eletrônicos.</p>
-</li>
-</ul>
-<p><strong>Artigo 12</strong></p>
-<pre class="language-text">Caput: Nos casos em que o tratamento de dados pessoais sensíveis se der sem o consentimento do titular, será necessário, sempre que possível, a anonimização dos dados pessoais sensíveis.
-</pre>
-</details>
-<br>
-<h3 id="a722-trinamentos">A.7.2.2 Trinamentos </h3>
-<p>Todos os novos colaboradores e contratados devem completar um treinamento de integração em segurança da informação antes de obter acesso aos sistemas de informação da empresa.</p>
-<p>O treinamento deve cobrir:</p>
-<ul>
-<li>Políticas de segurança da informação</li>
-<li>Procedimentos de segurança</li>
-<li>Boas práticas de segurança</li>
-<li>Responsabilidades do colaborador</li>
-</ul>
-<p>Treinamentos regulares devem ser realizados para todos os colaboradores, com frequência mínima anual.</p>
-<p>Os treinamentos contínuos devem incluir:</p>
-<ul>
-<li>Atualizações de políticas e procedimentos</li>
-<li>Novas ameaças e vulnerabilidades</li>
-<li>Simulações de incidentes de segurança</li>
-<li>Revisões de boas práticas</li>
-</ul>
-<p>Colaboradores em funções críticas ou com acesso a informações sensíveis devem receber treinamento adicional específico para suas responsabilidades.<br>
-Exemplos incluem:</p>
-<ul>
-<li>Administração de sistemas e rede ou equipe de TI</li>
-<li>Recursos Humanos(RH)</li>
-</ul>
-<p>Todos os treinamentos devem incluir uma avaliação para medir a compreensão e a retenção dos conhecimentos.</p>
-<p>Resultados das avaliações devem ser monitorados para identificar áreas de melhoria e ajustar os programas de treinamento conforme necessário.</p>
-<p>Relatórios de participação e desempenho nos treinamentos devem ser mantidos e revisados periodicamente.</p>
-<h3 id="enserramento-ou-mudança-na-contratação-ou-acesso">Enserramento ou mudança na contratação ou acesso </h3>
-<p><strong>A.7.3.1</strong></p>
-<p>O Departamento de Recursos Humanos (RH) terá acesso restrito ao sistema para exclusão de Colaboradores de Baixo Privilégio.</p>
-<p>O cancelamento de acesso será requisitado diretamente ao RH, e após a confirmação do cancelamento, o prazo para efetivar a exclusão de acesso do colaborador no sistema será de <strong>1 hora</strong>.</p>
-<p>O aumento de privilégios de colaboradores será realizado pela equipe de TI, mediante autorização do Departamento de Recursos Humanos (RH), conforme acordado entre ambas as partes. Um exemplo do procedimento:</p>
-<ul>
-<li>Identificação (ID) ou Nome Completo do funcionário.</li>
-<li>Setor em que trabalha.</li>
-<li>Novo tipo de privilégio ou área a frequentar.</li>
-</ul>
-<p><em>Após a mitigação pelo setor de TI, o privilégio será aplicado. O acesso pode ser negado caso haja uma indevida atribuição de tarefas ou área/setor incompatível com o quadrante do funcionário.</em></p>
-<h2 id="porteção-e-controle-de-ativos">Porteção e controle de Ativos </h2>
-<p><strong>A.8.1.1</strong></p>
-<p>Todos os ativos de informação devem ser identificados e registrados no inventário de ativos.</p>
-<p>O inventário deve incluir, mas não se limitar a:</p>
-<ul>
-<li>Hardware (servidores, computadores, dispositivos móveis)</li>
-<li>Software (sistemas operacionais, aplicativos, licenças)</li>
-<li>Dados e informações (bancos de dados, arquivos, documentos)</li>
-<li>Dispositivos de armazenamento (discos rígidos, pen drives)</li>
-<li>Recursos de rede (roteadores, switches, firewalls)</li>
-<li>Outros recursos (mídias de backup, documentos impressos)</li>
-</ul>
-<p>Cada ativo no inventário deve incluir informações detalhadas, como:</p>
-<ul>
-<li>Descrição do ativo</li>
-<li>Proprietário do ativo</li>
-<li>Localização física ou lógica</li>
-<li>Valor ou importância do ativo</li>
-<li>Data de aquisição</li>
-<li>Estado ou condição atual</li>
-<li>Medidas de segurança aplicáveis</li>
-<li>Data da última revisão ou atualização do inventário</li>
-</ul>
-<table>
-<thead>
-<tr>
-<th>Descrição do ativo</th>
-<th>Proprietário do ativo</th>
-<th>Localização física ou lógica</th>
-<th>Valor ou importância do ativo</th>
-<th>Data de aquisição</th>
-<th>Estado ou condição atual</th>
-<th>Medidas de segurança aplicáveis</th>
-<th>Data da última revisão ou atualização do inventário</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>Servidor de Banco de Dados Primário</td>
-<td>João Silva</td>
-<td>Data Center, Rack 3, Unidade 5</td>
-<td>Alto</td>
-<td>15/02/2021</td>
-<td>Em operação</td>
-<td>Controle de acesso biométrico, criptografia de dados, firewall dedicado</td>
-<td>01/03/2024</td>
-</tr>
-</tbody>
-</table>
-<p>O inventário de ativos deve ser atualizado regularmente para refletir adições, mudanças ou descomissionamentos de ativos e Revisões periódicas (pelo menos anualmente) devem ser realizadas para garantir a precisão e a completude do inventário.</p>
-<p>Medidas de segurança apropriadas devem ser implementadas para proteger cada ativo, conforme sua classificação e valor exemplos de medidas de proteção incluem controle de acesso, criptografia, backups regulares e monitoramento de segurança.</p>
-<p>Todos os colaboradores devem receber treinamento sobre a importância do inventário de ativos e suas responsabilidades na manutenção e proteção dos ativos e sessões de conscientização devem ser realizadas regularmente para manter o conhecimento atualizado.</p>
-<p><strong>A.8.1.2</strong></p>
-<p>Cada ativo deve ter um proprietário designado,da equipe de TI, que será responsávelpela gestão e proteção do ativo.</p>
-<ul>
-<li>Assegurar que o ativo seja adequadamente registrado no inventário.</li>
-<li>Garantir que as medidas de segurança apropriadas sejam implementadas e mantidas.</li>
-<li>Monitorar o uso do ativo e relatar qualquer incidente de segurança.</li>
-</ul>
-<p><strong>A.8.1.3</strong></p>
-<p>Os ativos de informação devem ser utilizados de maneira responsável e ética, exclusivamente para fins relacionados às atividades da empresa.</p>
-<p>Os colaboradores e contratados devem seguir as diretrizes de uso aceitável, que incluem:</p>
-<ul>
-<li>
-<p>Uso Autorizado:</p>
-<ul>
-<li>Utilizar os ativos apenas para tarefas autorizadas e relacionadas ao trabalho.<br>
-Proteção dos Ativos: Não compartilhar informações sensíveis com pessoas não autorizadas e proteger os ativos contra acesso não autorizado.</li>
-</ul>
-</li>
-<li>
-<p>Conformidade com Leis e Políticas:</p>
-<ul>
-<li>Cumprir todas as leis aplicáveis, regulamentações e políticas internas da empresa.</li>
-</ul>
-</li>
-<li>
-<p>Respeito aos Direitos de Propriedade Intelectual:</p>
-<ul>
-<li>Não copiar ou distribuir software ou outras propriedades intelectuais sem permissão adequada.<br>
-Uso da Internet e E-mail: Usar a internet e o e-mail corporativo de maneira apropriada, evitando atividades ilegais ou inadequadas.</li>
-</ul>
-</li>
-<li>
-<p>Consequências do Uso Indevido:</p>
-<ul>
-<li>O uso inadequado dos ativos pode resultar em medidas disciplinares, que podem incluir advertências, suspensão ou demissão, conforme a gravidade da violação.</li>
-</ul>
-</li>
-</ul>
-<h2 id="rotulos-e-tratamento">Rotulos e tratamento </h2>
-<p><strong>A.8.2</strong></p>
-<p><strong>Categorias de Classificação:</strong></p>
-<p>Toda informação deve ser rotulada de acordo com a sua classificação.<br>
-Rótulos devem ser claramente visíveis e legíveis, e aplicados tanto a informações físicas quanto digitais.</p>
-<ul>
-<li>Confidencial:
-<ul>
-<li>Informação cujo acesso é restrito e cuja divulgação não autorizada pode causar danos significativos à empresa.</li>
-</ul>
-</li>
-<li>Interno:
-<ul>
-<li>Informação que é destinada ao uso interno da empresa e cuja divulgação não autorizada pode causar danos moderados.</li>
-</ul>
-</li>
-<li>Público:
-<ul>
-<li>Informação que pode ser divulgada sem restrições e cujo acesso é irrestrito.</li>
-</ul>
-</li>
-</ul>
-<p><em>Toda informação deve ser rotulada de acordo com a sua classificação.</em><br>
-<em>Rótulos devem ser claramente visíveis e legíveis, e aplicados tanto a informações físicas quanto digitais.</em></p>
-<p><strong>Tratamento da Informação.</strong></p>
-<ul>
-<li>Confidencial:
-<ul>
-<li>Deve ser acessada somente por pessoal autorizado, armazenada em locais seguros, e transmitida usando métodos criptografados.</li>
-</ul>
-</li>
-<li>Interno:
-<ul>
-<li>Deve ser acessada por funcionários e parceiros conforme necessário, armazenada em áreas controladas, e transmitida usando métodos seguros.</li>
-</ul>
-</li>
-<li>Público:
-<ul>
-<li>Pode ser acessada e distribuída livremente, mas deve ser protegida contra alterações não autorizadas.</li>
-</ul>
-</li>
-</ul>
-<p><strong>Ciclo de Vida da Informação.</strong></p>
-<p>Garantir que a informação seja corretamente classificada e rotulada no momento da criação.</p>
-<div class="mermaid">    graph LR;
-        Criação --&gt;Armazenamento;
-        Armazenamento --&gt; Criptografia;
-        Armazenamento --&gt;nodeId[(Dados Persistentes)];
-        Criptografia --&gt; Transmissão --&gt; Descarte;
-        Transmissão --&gt; nodeId;
-</div><p><strong>Criação</strong>: Garantir que a informação seja corretamente classificada e rotulada no momento da criação.</p>
-<p><strong>Armazenamento</strong>: Proteger a informação conforme sua classificação, utilizando controles de acesso apropriados.</p>
-<p><strong>Transmissão</strong>: Utilizar métodos seguros para transmitir informações sensíveis, como criptografia para dados confidenciais.</p>
-<p><strong>Descarte</strong>: Descartar informações de maneira segura conforme sua classificação, incluindo a destruição física de mídias e a exclusão segura de arquivos digitais.</p>
-<h3 id="tratamento-de-mídias-removíveis">Tratamento de Mídias Removíveis </h3>
-<p><strong>A.8.3.</strong></p>
-<p>Mídias removíveis, como pen drives, CDs, DVDs e discos externos, devem ser gerenciadas para garantir a proteção adequada das informações armazenadas.<br>
-Acesso a mídias removíveis deve ser restrito a pessoal autorizado.</p>
-<p><strong>Descarte.</strong></p>
-<ul>
-<li>Mídias removíveis que não são mais necessárias devem ser descartadas de maneira segura.</li>
-<li>Procedimentos de descarte seguro incluem a destruição física das mídias ou a exclusão segura dos dados, conforme apropriado.</li>
-<li>O descarte deve ser registrado e documentado, incluindo a data e o método de descarte.</li>
-</ul>
-<p><strong>Transferência.</strong></p>
-<ul>
-<li>
-<p>A transferência de informações em mídias removíveis deve ser realizada de forma segura para evitar acesso não autorizado.</p>
-</li>
-<li>
-<p>Informações confidenciais transferidas em mídias removíveis devem ser criptografadas.</p>
-</li>
-<li>
-<p>Mídias removíveis devem ser transportadas em condições seguras, com controle rigoroso de acesso durante todo o processo de transferência.</p>
-</li>
-</ul>
-<h2 id="politica-de-controle-de-acesso-fisico">Politica de controle de acesso Fisico </h2>
-<p><strong>A.9.1.1.</strong></p>
-<p>O acesso às dependências da empresa é estritamente reservado para funcionários e terceiros devidamente cadastrados. Qualquer indivíduo que não atenda aos padrões estabelecidos poderá ser considerado uma ameaça à segurança, tanto física quanto lógica.</p>
-<p>O cesso fisico e Feito em Etapas e é segmentado em tada a empressa.</p>
-<p>Temos dois blocos de acesso quais chamamos de Predio e Galpão com seus setores.</p>
-<p><strong>Galpão:</strong></p>
-<div class="mermaid">block-beta
-
- columns 4
-
-   refeitorio Docas:3
-   Faturamento Trasporte:3
-    Banheiro    Estoque:3
-
-</div><p><strong>Predio:</strong></p>
-<div class="mermaid">block-beta
-columns 4
-    TI:2
-    Direção:2
-    Financeiro:4
-    Faturamento:2
-    Compras:2
-</div><p><strong>Visão Geral.</strong></p>
-<p>O controle de acesso principal sera na entrada ou Portaria<br>
-onde apos a validação sera liberado o acesso ao funiconario.</p>
-<div class="mermaid">block-beta
-columns 4
-Catraca:1
-Portaria:2
-Veiculos:1
-</div><p><strong>Veiculos:</strong></p>
-<p><img src="./img/Veiculos1.png" alt="Alternate text"></p>
-<p><img src="./img/Veiculos2.png" alt="Alternate text"></p>
-<p><strong>Troniquete:</strong></p>
-<p><img src="./img/FacilaTorniquete.png" alt="Alternate text"></p>
-<p><strong>Tipos para escritorio ,sala instalações:</strong></p>
-<p>Salas Livre sendo elas:</p>
-<ul>
-<li>Refeitorio</li>
-<li>Salas de descompressão</li>
-<li>Banheiros</li>
-</ul>
-<p>Contarão com controle pormeio do sistema de reconhecimento facial<br>
-com controles mais simples:</p>
-<p><img src="./img/controle-de-acesso-pedestal-1024x1024.jpg" alt="Alternate text"></p>
-<p>Portas de nivel 1 como:</p>
-<ul>
-<li>Faruramento</li>
-<li>Financeiro</li>
-<li>Compras</li>
-</ul>
-<p>Terao sistema de reconhecimento facil:</p>
-<p><img src="./img/a_2_25.jpg" alt="Alternate text"></p>
-<p>Portas de nivel 2 como:</p>
-<ul>
-<li>TI</li>
-<li>Estoque</li>
-<li>Direção</li>
-</ul>
-<p>Terão reconehcimento facil + biometria para maior segurança:</p>
-<p><img src="./img/Senior_Montagem-2%20(1).jpg" alt="Alternate text"></p>
-<p><strong>A.9.3.</strong></p>
-<p>Os funcionários estão obrigados a seguir as condutas de segurança listadas a seguir:</p>
-<ul>
-<li>
-<p>Acesso restrito ao setor designado ou autorizado por seu superior.</p>
-</li>
-<li>
-<p>É terminantemente proibido o acesso aos setores de trabalho portando itens pessoais.</p>
-</li>
-<li>
-<p>Dispositivos móveis podem ser levados, desde que estejam em conformidade com as restrições e obrigações de conduta estabelecidas neste documento.</p>
-</li>
-<li>
-<p>É absolutamente inadmissível a entrada, por qualquer meio, de familiares, amigos ou funcionários em setores utilizando credenciais pertencentes a terceiros.</p>
-</li>
-</ul>
-<p><strong>Cadastro:</strong></p>
-<p>O cadastro do colaborador será realizado após a efetiva contratação, mediante sua assinatura nos termos de privacidade fornecidos pelo Departamento de Recursos Humanos no momento da contratação. Durante esse processo, serão requeridos os seguintes dados:</p>
-<ul>
-<li>Fotografia para reconhecimento facial (podendo ser única ou múltipla).</li>
-<li>Coleta de impressão digital.</li>
-<li>Placa do veículo (opcional).</li>
-</ul>
-<p>Tais dados serão salvos e armazenados para o controle de acesso físico dos colaboradores. Além disso, será fornecido um login com senha para acesso à rede Wi-Fi livre do local.</p>
-<p>Dando assim acesso de Baixo nivel ao Colaborador.</p>
-<p><em>Usuarios de Medio e Alto nivel serão cadastrados pelo setor de TI.</em></p>
-<p><strong>Atualização de permissão:</strong></p>
-<p><em>No caso de necessidade de atualização cadastral, o colaborador poderá realizar tal procedimento na portaria, mediante a apresentação de documentos como CPF, RG ou CNH.</em></p>
-<p>O aumento de privilégios de colaboradores será realizado pela equipe de TI, mediante autorização do Departamento de Recursos Humanos (RH), conforme acordado entre ambas as partes. Um exemplo do procedimento:</p>
-<ul>
-<li>Identificação (ID) ou Nome Completo do funcionário.</li>
-<li>Setor em que trabalha.</li>
-<li>Novo tipo de privilégio ou área a frequentar.</li>
-</ul>
-<p><em>Após a mitigação pelo setor de TI, o privilégio será aplicado. O acesso pode ser negado caso haja uma indevida atribuição de tarefas ou área/setor incompatível com o quadrante do funcionário.</em></p>
-<h2 id="respomsabilidade-do-usuario">Respomsabilidade do Usuario </h2>
-<p><strong>A.9.3:</strong></p>
-<p>Os funcionários estão obrigados a seguir as condutas de segurança listadas a seguir:</p>
-<ul>
-<li>
-<p>Acesso restrito ao setor designado ou autorizado por seu superior.</p>
-</li>
-<li>
-<p>É terminantemente proibido o acesso aos setores de trabalho portando itens pessoais.</p>
-</li>
-<li>
-<p>Dispositivos móveis podem ser levados, desde que estejam em conformidade com as restrições e obrigações de conduta estabelecidas neste documento.</p>
-</li>
-<li>
-<p>É absolutamente inadmissível a entrada, por qualquer meio, de familiares, amigos ou funcionários em setores utilizando credenciais pertencentes a terceiros.</p>
-</li>
-</ul>
-<h2 id="acesso-a-rede-servicos-de-rede">Acesso a rede servicos de rede </h2>
-<p><strong>A.9.1.2:</strong></p>
-<h3 id="acesso-a-rede-serviços-de-rede">Acesso a rede serviços de rede </h3>
-<p><strong>Controle de Acesso:</strong></p>
-<ul>
-<li>
-<p>Autenticação: Todos os funcionários devem usar credenciais únicas para acessar a rede.<br>
-Senhas devem ser fortes e atualizadas regularmente.</p>
-</li>
-<li>
-<p>Autorização: O acesso aos recursos de rede deve ser baseado no princípio de menor<br>
-privilégio. Somente conceder acesso necessário para a realização das funções do funcionário.</p>
-</li>
-<li>
-<p>Registro de Acesso: Mantenha um registro detalhado de todos os acessos à rede e serviços<br>
-de rede para auditoria e monitoramento.</p>
-</li>
-</ul>
-<p><strong>Políticas de Senhas:</strong></p>
-<ul>
-<li>
-<p>Complexidade das Senhas: Senhas devem ter, no mínimo, 8 caracteres, incluindo letras<br>
-maiúsculas, minúsculas, números e símbolos especiais.</p>
-</li>
-<li>
-<p>Troca Periódica: As senhas devem ser trocadas a cada 90 dias.</p>
-</li>
-<li>
-<p>Gestão de Senhas: Proibir o uso de senhas reutilizadas ou óbvias.</p>
-</li>
-</ul>
-<p><strong>Uso de Redes Seguras:</strong></p>
-<ul>
-<li>
-<p>VPN: Requerer o uso de VPN para acesso remoto à rede corporativa.</p>
-</li>
-<li>
-<p>Wi-Fi Seguro: Redes Wi-Fi corporativas devem ser protegidas por criptografia WPA3 e senhas<br>
-seguras.</p>
-</li>
-<li>
-<p>Segregação de Redes: Segregar redes internas (por exemplo, administração, operações) de<br>
-redes de visitantes e dispositivos IoT.</p>
-</li>
-</ul>
-<p><strong>Proteção contra Ameaças:</strong></p>
-<ul>
-<li>
-<p>Firewall: Implementar e manter firewalls para proteger a rede contra acessos não<br>
-autorizados e ataques externos.</p>
-</li>
-<li>
-<p>Antivírus e Antimalware: Todos os dispositivos conectados à rede devem ter software<br>
-antivírus e antimalware atualizado.</p>
-</li>
-<li>
-<p>Atualizações de Segurança: Aplicar atualizações de segurança e patches regularmente em<br>
-todos os dispositivos e sistemas de rede.</p>
-</li>
-</ul>
-<p><strong>Políticas de Uso Aceitável:</strong></p>
-<ul>
-<li>
-<p>Uso de Internet: Proibir o acesso a sites e serviços não relacionados ao trabalho durante o<br>
-horário de expediente.</p>
-</li>
-<li>
-<p>Downloads e Instalações: Restringir downloads e instalações de software somente a<br>
-aplicações autorizadas pela equipe de TI.</p>
-</li>
-<li>
-<p>Dispositivos Pessoais: Desencorajar o uso de dispositivos pessoais para acesso à rede<br>
-corporativa. Se necessário, tais dispositivos devem cumprir as políticas de segurança da<br>
-empresa.</p>
-</li>
-</ul>
-<p><strong>Monitoramento e Auditoria:</strong></p>
-<ul>
-<li>
-<p>Monitoramento Contínuo: Implementar soluções de monitoramento de rede para detectar e<br>
-responder a atividades suspeitas.</p>
-</li>
-<li>
-<p>Auditorias Regulares: Realizar auditorias regulares de segurança de rede para identificar e<br>
-corrigir vulnerabilidades.</p>
-</li>
-<li>
-<p>Logs: Manter logs detalhados de acessos e atividades na rede por um período mínimo de 6<br>
-meses.</p>
-</li>
-</ul>
-<p><strong>Educação e Treinamento:</strong></p>
-<ul>
-<li>
-<p>Treinamento Regular: Oferecer treinamento regular de conscientização sobre segurança<br>
-cibernética para todos os funcionários.</p>
-</li>
-<li>
-<p>Políticas de Rede: Certificar-se de que todos os funcionários leiam e compreendam as<br>
-políticas de uso de rede e serviços.</p>
-</li>
-</ul>
-<p><strong>Resposta a Incidentes:</strong></p>
-<ul>
-<li>
-<p>Plano de Resposta a Incidentes: Desenvolver e manter um plano de resposta a incidentes<br>
-cibernéticos que inclua procedimentos para identificação, contenção, erradicação e<br>
-recuperação de incidentes.</p>
-</li>
-<li>
-<p>Notificação de Incidentes: Estabelecer um canal claro para notificação imediata de incidentes<br>
-de segurança à equipe de TI ou responsável de segurança.</p>
-</li>
-</ul>
-<p><strong>Backups e Recuperação de Dados:</strong></p>
-<ul>
-<li>
-<p>Backups Regulares: Realizar backups regulares de dados críticos e armazená-los em locais<br>
-seguros e separados da rede principal.</p>
-</li>
-<li>
-<p>Testes de Recuperação: Testar regularmente os procedimentos de recuperação de dados<br>
-para garantir a integridade e disponibilidade dos backups.</p>
-</li>
-</ul>
-<p><strong>Política de Privacidade e Confidencialidade:</strong></p>
-<ul>
-<li>
-<p>Proteção de Dados: Garantir que todas as informações sensíveis e dados dos clientes sejam<br>
-criptografados em trânsito e em repouso.</p>
-</li>
-<li>
-<p>Acesso Restrito: Restringir o acesso a informações confidenciais apenas a funcionários<br>
-autorizados.</p>
-</li>
-<li>
-<p>Conformidade: Certificar-se de que as práticas de privacidade e proteção de dados estejam<br>
-em conformidade com as leis e regulamentos aplicáveis, como a LGPD (Lei Geral de Proteção<br>
-de Dados) no Brasil.</p>
-</li>
-</ul>
-<h3 id="acesso-a-aplicações-de-rede-rap">Acesso a Aplicações de rede RAP </h3>
-<p><strong>A.9.4:</strong></p>
-<p><strong>Autenticação e Autorização:</strong></p>
-<p><strong>Autenticação Forte:</strong></p>
-<ul>
-<li>
-<p>MFA (Autenticação Multifator): Implementar autenticação multifator para todos os acessos a<br>
-aplicações de rede. Isso pode incluir uma combinação de senhas, tokens de segurança, ou<br>
-autenticação biométrica.</p>
-</li>
-<li>
-<p>Credenciais Únicas: Cada usuário deve ter credenciais únicas. O compartilhamento de<br>
-credenciais é estritamente proibido.</p>
-</li>
-</ul>
-<p><strong>Autorização Baseada em Função:</strong></p>
-<ul>
-<li>
-<p>Princípio do Menor Privilégio: Conceder acesso às aplicações de rede com base no princípio<br>
-do menor privilégio. Os usuários devem ter apenas as permissões necessárias para realizar<br>
-suas funções.</p>
-</li>
-<li>
-<p>Revisão de Permissões: Realizar revisões periódicas das permissões de acesso dos usuários<br>
-para garantir que sejam apropriadas às suas funções atuais.<br>
-Controle de Acesso</p>
-</li>
-</ul>
-<p><strong>VPN Segura:</strong></p>
-<ul>
-<li>
-<p>Uso Obrigatório de VPN: Todo acesso remoto às aplicações de rede deve ser feito através de<br>
-uma VPN segura para garantir a criptografia dos dados em trânsito.</p>
-</li>
-<li>
-<p>Segurança de VPN: Utilizar protocolos de segurança modernos (como IPsec ou SSL/TLS) para<br>
-a configuração da VPN.</p>
-</li>
-</ul>
-<p><strong>Monitoramento e Registro:</strong></p>
-<ul>
-<li>
-<p>Registro de Acessos: Manter logs detalhados de todas as tentativas de acesso e acessos<br>
-realizados às aplicações de rede.</p>
-</li>
-<li>
-<p>Monitoramento Contínuo: Implementar monitoramento contínuo para detectar atividades<br>
-suspeitas e responder a possíveis incidentes de segurança.<br>
-Manutenção e Atualizações</p>
-</li>
-</ul>
-<p><strong>Atualizações Regulares:</strong></p>
-<ul>
-<li>
-<p>Patch Management: Manter todas as aplicações de rede atualizadas com os patches de<br>
-segurança mais recentes.</p>
-</li>
-<li>
-<p>Verificação de Vulnerabilidades: Realizar verificações periódicas de vulnerabilidades e<br>
-corrigir imediatamente qualquer falha identificada.</p>
-</li>
-</ul>
-<p><strong>Manutenção Preventiva:</strong></p>
-<ul>
-<li>
-<p>Monitoramento de Desempenho: Monitorar continuamente o desempenho das aplicações<br>
-de rede para identificar e resolver problemas proativamente.</p>
-</li>
-<li>
-<p>Backups Regulares: Realizar backups regulares das aplicações e dados críticos para garantir a<br>
-recuperação rápida em caso de falhas.<br>
-Política de Uso Aceitável</p>
-</li>
-</ul>
-<p><strong>Treinamento de Usuários:</strong></p>
-<ul>
-<li>
-<p>Conscientização de Segurança: Treinar todos os usuários sobre práticas seguras de acesso<br>
-remoto, incluindo a importância de senhas fortes, reconhecimento de phishing e uso correto<br>
-de VPNs.</p>
-</li>
-<li>
-<p>Política de Uso: Desenvolver e comunicar claramente uma política de uso aceitável para o<br>
-acesso a aplicações de rede.</p>
-</li>
-</ul>
-<p><strong>Uso Apropriado de Dispositivos:</strong></p>
-<ul>
-<li>
-<p>Dispositivos Corporativos: Sempre que possível, os acessos a aplicações de rede devem ser<br>
-realizados a partir de dispositivos corporativos que estejam sob o controle e monitoramento<br>
-da empresa.</p>
-</li>
-<li>
-<p>Segurança de Dispositivos Pessoais: Se for necessário o uso de dispositivos pessoais, estes<br>
-devem estar protegidos com software antivírus, firewalls e outras medidas de segurança<br>
-aprovadas pela empresa.</p>
-</li>
-</ul>
-<h3 id="resposta-a-incidentes">Resposta a Incidentes </h3>
-<p><strong>Procedimentos de Resposta a Incidentes:</strong></p>
-<ul>
-<li>
-<p>Plano de Resposta: Desenvolver um plano de resposta a incidentes específico para acessos<br>
-remotos, incluindo identificação, contenção, erradicação e recuperação.</p>
-</li>
-<li>
-<p>Notificação Imediata: Estabelecer um canal de comunicação claro para a notificação imediata<br>
-de incidentes de segurança relacionados ao acesso remoto.</p>
-</li>
-</ul>
-<p><strong>Revisão Pós-Incidente:</strong></p>
-<ul>
-<li>
-<p>Análise de Incidentes: Após a resolução de um incidente, realizar uma análise detalhada para<br>
-identificar as causas e implementar medidas preventivas.</p>
-</li>
-<li>
-<p>Atualização de Políticas: Revisar e atualizar as políticas de segurança de acesso remoto com<br>
-base nas lições aprendidas durante os incidentes.<br>
-Gestão de Sessões</p>
-</li>
-</ul>
-<p><strong>Tempo de Sessão:</strong></p>
-<ul>
-<li>
-<p>Tempo Máximo de Inatividade: Configurar um tempo máximo de inatividade após o qual os<br>
-usuários serão automaticamente desconectados das aplicações de rede.</p>
-</li>
-<li>
-<p>Renovação de Sessão: Implementar a renovação periódica das sessões de autenticação para<br>
-minimizar o risco de sequestro de sessão.</p>
-</li>
-</ul>
-<p><strong>Encerramento Seguro:</strong></p>
-<ul>
-<li>
-<p>Logout Obrigatório: Incentivar e, quando possível, exigir que os usuários façam logout das<br>
-aplicações de rede quando terminarem suas tarefas.</p>
-</li>
-<li>
-<p>Limitação de Conexões Simultâneas: Restringir o número de conexões simultâneas<br>
-permitidas por usuário para reduzir o risco de acessos não autorizados.<br>
-A.11.2 Segurança dos equipamentos:<br>
-Segurança dos Cabos</p>
-</li>
-</ul>
-<p><strong>Organização e Gestão de Cabos:</strong></p>
-<ul>
-<li>
-<p>Identificação: Todos os cabos devem ser devidamente etiquetados com informações de<br>
-origem e destino.</p>
-</li>
-<li>
-<p>Organização: Utilizar canaletas, braçadeiras e organizadores de cabos para manter os cabos<br>
-arrumados e evitar emaranhados.</p>
-</li>
-<li>
-<p>Acesso Restrito: Garantir que os cabos de rede e energia estejam em locais de acesso<br>
-restrito, apenas para pessoal autorizado.</p>
-</li>
-</ul>
-<p><strong>Proteção Física:</strong></p>
-<ul>
-<li>
-<p>Instalação Correta: Cabos devem ser instalados de maneira a evitar dobras excessivas e<br>
-danos físicos.</p>
-</li>
-<li>
-<p>Proteção Contra Pisoteio: Evitar que cabos sejam colocados em áreas de passagem onde<br>
-possam ser pisoteados ou danificados.</p>
-</li>
-<li>
-<p>Isolamento Adequado: Usar isolamento e proteção apropriados para cabos expostos a<br>
-ambientes potencialmente danosos (temperatura, umidade, etc.).<br>
-Manutenção de Equipamentos</p>
-</li>
-</ul>
-<p><strong>Plano de Manutenção Preventiva:</strong></p>
-<ul>
-<li>
-<p>Agendamento Regular: Estabelecer um cronograma de manutenção preventiva para todos os<br>
-equipamentos críticos.</p>
-</li>
-<li>
-<p>Registro de Manutenção: Manter registros detalhados de todas as atividades de manutenção<br>
-realizadas em cada equipamento.</p>
-</li>
-<li>
-<p>Verificação de Funcionalidade: Realizar verificações periódicas de funcionalidade para<br>
-garantir que os equipamentos estejam operando corretamente.</p>
-</li>
-</ul>
-<p><strong>Manutenção Corretiva:</strong></p>
-<ul>
-<li>
-<p>Procedimentos Padronizados: Definir procedimentos claros para a identificação, diagnóstico<br>
-e correção de falhas em equipamentos.</p>
-</li>
-<li>
-<p>Equipe Qualificada: Garantir que apenas técnicos qualificados e autorizados realizem a<br>
-manutenção corretiva.</p>
-</li>
-<li>
-<p>Peças de Reposição: Manter um estoque adequado de peças de reposição para minimizar o<br>
-tempo de inatividade.</p>
-</li>
-</ul>
-<h3 id="remoção-dos-ativos">Remoção dos Ativos </h3>
-<p><strong>Processo de Desativação:</strong></p>
-<ul>
-<li>Autorização: Obter autorização da gerência antes de remover qualquer ativo de TI.</li>
-<li>Documentação: Registrar a remoção de ativos em um sistema de inventário, incluindo<br>
-motivo da remoção e destino do ativo.</li>
-</ul>
-<h3 id="segurança-de-dados">Segurança de Dados </h3>
-<ul>
-<li>
-<p>Destruição de Dados: Garantir que todos os dados sejam completamente apagados ou<br>
-destruídos antes da remoção de qualquer equipamento de armazenamento.</p>
-</li>
-<li>
-<p>Confirmação: Realizar uma verificação para confirmar que a destruição de dados foi bemsucedida.<br>
-Reutilização ou Descarte</p>
-</li>
-</ul>
-<p><strong>Avaliação de Reutilização:</strong></p>
-<ul>
-<li>
-<p>Condição do Equipamento: Avaliar a condição e a funcionalidade do equipamento antes de<br>
-decidir pela reutilização.</p>
-</li>
-<li>
-<p>Atualização e Reparos: Realizar atualizações e reparos necessários para que o equipamento<br>
-possa ser reutilizado de forma eficaz e segura.</p>
-</li>
-</ul>
-<p><strong>Descarte Seguro:</strong></p>
-<ul>
-<li>
-<p>Conformidade Legal: Descartar equipamentos de acordo com as regulamentações<br>
-ambientais e de descarte de eletrônicos vigentes.</p>
-</li>
-<li>
-<p>Parcerias com Recicladores: Estabelecer parcerias com empresas de reciclagem certificadas<br>
-para garantir o descarte seguro e responsável de equipamentos.</p>
-</li>
-<li>
-<p>Registro de Descarte: Manter registros detalhados do descarte de cada equipamento,<br>
-incluindo data, método e destino final.</p>
-</li>
-</ul>
-<h3 id="equipamentos-sem-monitoração">Equipamentos Sem Monitoração </h3>
-<p><strong>Identificação e Rastreamento:</strong></p>
-<ul>
-<li>
-<p>Inventário Completo: Manter um inventário atualizado de todos os equipamentos, incluindo<br>
-aqueles que não estão sob monitoração ativa.</p>
-</li>
-<li>
-<p>Etiquetagem: Etiquetar todos os equipamentos com identificadores únicos para facilitar o<br>
-rastreamento.</p>
-</li>
-</ul>
-<p><strong>Segurança Física:</strong></p>
-<ul>
-<li>
-<p>Armazenamento Seguro: Guardar equipamentos sem monitoração em locais seguros e<br>
-trancados, acessíveis apenas a pessoal autorizado.</p>
-</li>
-<li>
-<p>Acesso Restrito: Limitar o acesso a áreas onde equipamentos sem monitoração estão<br>
-armazenados.</p>
-</li>
-</ul>
-<p><strong>Avaliação Periódica:</strong></p>
-<ul>
-<li>
-<p>Verificação Regular: Realizar verificações periódicas para garantir que equipamentos sem<br>
-monitoração ainda estejam em boas condições e não tenham sido removidos sem autorização.</p>
-</li>
-<li>
-<p>Reavaliação da Necessidade: Avaliar regularmente a necessidade de manter equipamentos<br>
-sem monitoração ou integrá-los ao sistema de monitoração</p>
-</li>
-</ul>
-<h2 id="segurança-de-rede">Segurança de rede </h2>
-<p><strong>A.13.1:</strong></p>
-<h3 id="controle-da-rede">Controle da Rede </h3>
-<p>O controle da rede envolve o gerenciamento e a<br>
-implementação de políticas e dispositivos para controlar o tráfego de rede, garantindo<br>
-que apenas o tráfego autorizado seja permitido. Isso pode ser alcançado através de<br>
-firewalls, roteadores, switches e outras tecnologias de controle de acesso à rede (NAC Network Access Control):</p>
-<ul>
-<li>
-<p>Configuração de listas de controle de acesso (ACLs) nos dispositivos de rede para<br>
-filtrar o tráfego com base em endereços IP, portas e protocolos.</p>
-</li>
-<li>
-<p>Implementação de VLANs (Virtual LANs) para segmentar a rede e isolar diferentes<br>
-tipos de tráfego.</p>
-</li>
-<li>
-<p>Utilização de firewalls para controlar o tráfego de entrada e saída da rede, além de<br>
-inspecionar e filtrar o tráfego entre redes internas.</p>
-</li>
-</ul>
-<h3 id="segurança-do-serviço-da-rede">Segurança do Serviço da Rede </h3>
-<ul>
-<li>
-<p>Atualização regular de software e firmware para corrigir vulnerabilidades<br>
-conhecidas.</p>
-</li>
-<li>
-<p>Implementação de autenticação forte para acessar serviços de rede, como SSH<br>
-(Secure Shell) e RDP (Remote Desktop Protocol).</p>
-</li>
-<li>
-<p>Configuração de serviços de rede para usar conexões criptografadas, como HTTPS para sites da web e VPN (Virtual Private Network) para acesso remoto seguro.</p>
-</li>
-<li>
-<p>Monitoramento de atividades de rede para detectar e responder a eventos de<br>
-segurança, como tentativas de acesso não autorizado ou comportamento malicioso.</p>
-</li>
-</ul>
-<h3 id="segregação-de-rede">Segregação de Rede </h3>
-<p>A segregação de rede é implementada da seguinte froma :</p>
-<p>dividi uma rede em<br>
-segmentos separados, geralmente com base em funções, departamentos ou níveis de sensibilidade dos dados.</p>
-<p><em>Isso ajudara a limitar a propagação de ataques e reduzir o<br>
-impacto de violações de segurança.</em></p>
-<ul>
-<li>
-<p>Segmentação física usando switches e roteadores para dividir a rede em sub-redes<br>
-separadas.</p>
-</li>
-<li>
-<p>Implementação de políticas de firewall para controlar o tráfego entre segmentos de<br>
-rede, permitindo apenas o tráfego autorizado.</p>
-</li>
-<li>
-<p>Utilização de VLANs para isolar diferentes tipos de tráfego, como voz, dados e<br>
-dispositivos IoT.</p>
-</li>
-<li>
-<p>Implementação de políticas de acesso baseadas em funções (RBAC - Role-Based<br>
-Access Control) para restringir o acesso a recursos de rede com base nas<br>
-responsabilidades e privilégios dos usuários.</p>
-</li>
-</ul>
-<h2 id="procedimento-operacionais">Procedimento operacionais </h2>
-<p><strong>A.12.1:</strong></p>
-<p>Estabelecer procedimentos operacionais para garantir a eficácia e a conformidade dos<br>
-processos relacionados à segurança da informação.</p>
-<ul>
-<li>
-<p>Todos os funcionários devem estar cientes dos procedimentos operacionais relacionados<br>
-à segurança da informação e devem ser treinados regularmente sobre suas<br>
-responsabilidade</p>
-</li>
-<li>
-<p>Os procedimentos operacionais devem ser documentados e mantidos atualizados,<br>
-refletindo as melhores práticas e requisitos regulatório</p>
-</li>
-<li>
-<p>Os procedimentos operacionais devem abranger áreas como gerenciamento de acesso,<br>
-controle de mudanças, gestão de incidentes, backup e recuperação, entre outro</p>
-</li>
-<li>
-<p>As revisões regulares dos procedimentos operacionais devem ser realizadas para garantir<br>
-sua eficácia contínua e relevância para o ambiente operacional da organizaçã</p>
-</li>
-<li>
-<p>As exceções aos procedimentos operacionais padrão devem ser documentadas,<br>
-justificadas e aprovadas pelas partes interessadas apropriada</p>
-</li>
-<li>
-<p>A conformidade com os procedimentos operacionais deve ser monitorada regularmente e quaisquer desvios devem ser corrigidos e documentados adequadamente.</p>
-</li>
-</ul>
-<h2 id="poreteção-contra-malware">Poreteção contra malware </h2>
-<p><strong>A.12.2:</strong></p>
-<p>Esta política tem como objetivo estabelecer diretrizes e procedimentos para<br>
-proteger os sistemas de informação da [Nome da Empresa] contra ameaças de vírus,<br>
-spam e infecções de computadores.</p>
-<h3 id="controle-de-vírus">Controle de Vírus </h3>
-<p>-Todos os computadores e dispositivos de armazenamento de dados devem ser<br>
-equipados com software antivírus atualizado.</p>
-<ul>
-<li>
-<p>Atualizações automáticas do software antivírus devem ser habilitadas em todos os dispositivos.</p>
-</li>
-<li>
-<p>Todos os arquivos baixados da internet, anexos de e-mail e dispositivos externos<br>
-devem ser verificados quanto a vírus antes de serem abertos ou executados.</p>
-</li>
-</ul>
-<h3 id="controle-de-spam">Controle de Spam </h3>
-<ul>
-<li>
-<p>Um sistema de filtragem de spam deve ser implementado nos servidores de email da empresa.</p>
-</li>
-<li>
-<p>Funcionários devem ser instruídos a relatar e-mails suspeitos ou de phishing<br>
-imediatamente ao departamento de TI.</p>
-</li>
-<li>
-<p>A conscientização sobre segurança deve ser promovida regularmente para ajudar<br>
-os funcionários a identificar e-mails de spam.</p>
-</li>
-</ul>
-<h3 id="soluções-para-computadores-infectados">Soluções para Computadores Infectados </h3>
-<ul>
-<li>
-<p>Funcionários devem relatar imediatamente qualquer suspeita de infecção por<br>
-vírus ao departamento de TI.</p>
-</li>
-<li>
-<p>O departamento de TI deve ter procedimentos claros para isolar e limpar<br>
-computadores infectados.</p>
-</li>
-<li>
-<p>Regularmente, devem ser realizadas verificações de segurança em todos os<br>
-sistemas para identificar e resolver quaisquer infecções ou vulnerabilidades.</p>
-</li>
-</ul>
-<p><strong>Responsabilidades:</strong></p>
-<ul>
-<li>
-<p>A equipe de TI é responsável por implementar e manter as medidas de segurança<br>
-conforme descrito nesta política.</p>
-</li>
-<li>
-<p>Todos os funcionários são responsáveis por seguir as diretrizes estabelecidas<br>
-nesta política e relatar quaisquer preocupações de segurança ao departamento de TI.</p>
-</li>
-</ul>
-<h2 id="copias-de-segurança-das-infromaçoes">Copias de segurança das infromaçoes </h2>
-<p><strong>A.12.3:</strong></p>
-<h3 id="políticas-de-backup">Políticas de Backup </h3>
-<p><strong>Frequência de Backup:</strong></p>
-<ul>
-<li>
-<p>Diariamente: Realizar backups incrementais para capturar alterações recentes.</p>
-</li>
-<li>
-<p>Semanalmente: Realizar backups completos dos dados críticos.</p>
-</li>
-</ul>
-<p><strong>Localização dos Backups:</strong></p>
-<p>Armazenar cópias de backup em locais distintos, incluindo pelo menos uma cópia em um local seguro fora do servidor principal (off-site ou em Numvem)</p>
-<p><strong>Armazenar cópias de backup Interno:</strong></p>
-<p><strong>RAID 5:</strong></p>
-<ul>
-<li>Quantidade mínima de discos : 3</li>
-<li>HD Storege</li>
-</ul>
-<p>Os discos podem ser mudados comforme a necessidade mas devem atender o seguinte parametros:</p>
-<ul>
-<li>Armazenamento minimo 2TB</li>
-<li>HD Storege de no minimo 40TB</li>
-</ul>
-<p><strong>Segurança dos Backups:</strong></p>
-<ul>
-<li>Utilizar criptografia de disco completo (FDE) com algoritmos robustos, como AES-256.</li>
-</ul>
-<h2 id="registro-e-monitoramento">Registro e monitoramento </h2>
-<p><strong>A.12.3:</strong></p>
-<h3 id="registro-de-eventos--proteção-de-logs">Registro de Eventos &amp; Proteção de Logs </h3>
-<p>Os logs, que são os registros de eventos em formato eletrônico, devem ser protegidos contra acesso não<br>
-autorizado, alteração e exclusão.</p>
-<p>A integridade dos logs é crucial para garantir a confiabilidade das informações registradas e para a<br>
-investigação forense em caso de incidentes.</p>
-<h3 id="controle-de-softwares-operacionais">Controle de Softwares Operacionais </h3>
-<p><strong>A.12.5:</strong></p>
-<p>Esta política visa garantir que apenas softwares legítimos e licenciados sejam utilizados. É importante<br>
-seguir a legislação de propriedade intelectual para adquirir softwares de forma legal.</p>
-<p>Para o controle algumas medidas devem ser tomadas tais como:</p>
-<ul>
-<li>
-<p>Atualizações regulares de software são essenciais para corrigir vulnerabilidades de segurança<br>
-conhecidas. Essa política envolve aplicar essas atualizações de forma regular para manter os sistemas<br>
-protegidos.</p>
-</li>
-<li>
-<p>Realizar auditorias periódicas e monitorar continuamente o uso de softwares ajuda a detectar qualquer<br>
-atividade suspeita ou não autorizada, mantendo a segurança do ambiente de TI.</p>
-</li>
-<li>
-<p>Manter um inventário atualizado de todos os softwares instalados e configurar os sistemas operacionais<br>
-de acordo com os padrões de segurança estabelecidos é crucial para garantir que os sistemas estejam<br>
-protegidos.</p>
-</li>
-<li>
-<p>Implementar medidas de proteção, como antivírus e firewalls, é fundamental para detectar e prevenir a<br>
-instalação e execução de softwares maliciosos que possam comprometer a segurança dos sistemas.</p>
-</li>
-<li>
-<p>Treinar os usuários sobre as políticas de segurança de software e conscientizá-los sobre os riscos<br>
-associados ao uso de softwares não autorizados ou não seguros ajuda a manter um ambiente de TI<br>
-seguro.</p>
-</li>
-</ul>
-<h2 id="restriçoes-para-instalação-de-software">Restriçoes para instalação de software </h2>
-<p>As restrições para instalação de software em empresas são<br>
-implementadas para garantir a segurança, conformidade e eficiência dos sistemas de<br>
-tecnologia da informação.</p>
-<p><strong>Restrições &amp; Deveres:</strong></p>
-<ul>
-<li>Os usuarios devem seguir a <em>Lista de Software Aprovados</em> (uma lista de software<br>
-aprovado que os funcionários podem instalar)</li>
-</ul>
-<p><em>Isso ajuda a garantir que apenas<br>
-softwares confiáveis e compatíveis com as políticas da empresa sejam<br>
-utilizados</em></p>
-<ul>
-<li>
-<p>A empresas precisam garantir que todos os<br>
-softwares instalados estejam devidamente licenciados</p>
-</li>
-<li>
-<p>Os funcionários<br>
-não têm permissão para instalar software sem a aprovação de um<br>
-administrador de sistema</p>
-</li>
-</ul>
-<p><em>Ajuda a evitar a instalação de softwares não<br>
-autorizados que possam representar riscos de segurança ou prejudicar a integridade do sistema.</em></p>
-<h2 id="vulnerabilidae-tecnica">Vulnerabilidae Tecnica </h2>
-<p><strong>A.12.6.1:</strong></p>
-<p>refere-se a uma fraqueza ou falha em um sistema de<br>
-tecnologia que pode ser explorada por indivíduos mal-intencionados para comprometer a segurança desse sistema.</p>
-<p><strong>Mitigação:</strong></p>
-<h3 id="controle-da-rede-1">Controle da Rede </h3>
-<ul>
-<li>
-<p>Configuração de listas de controle de acesso (ACLs) nos dispositivos de rede para<br>
-filtrar o tráfego com base em endereços IP, portas e protocolos.</p>
-</li>
-<li>
-<p>Implementação de VLANs (Virtual LANs) para segmentar a rede e isolar diferentes<br>
-tipos de tráfego.</p>
-</li>
-<li>
-<p>Utilização de firewalls para controlar o tráfego de entrada e saída da rede, além de<br>
-inspecionar e filtrar o tráfego entre redes internas.</p>
-</li>
-</ul>
-<h3 id="segurança-do-serviço-da-rede-1">Segurança do Serviço da Rede </h3>
-<ul>
-<li>
-<p>Atualização regular de software e firmware para corrigir vulnerabilidades<br>
-conhecidas.</p>
-</li>
-<li>
-<p>Implementação de autenticação forte para acessar serviços de rede, como SSH<br>
-(Secure Shell) e RDP (Remote Desktop Protocol).</p>
-</li>
-<li>
-<p>Configuração de serviços de rede para usar conexões criptografadas, como HTTPS<br>
-para sites da web e VPN (Virtual Private Network) para acesso remoto seguro.</p>
-</li>
-<li>
-<p>Monitoramento de atividades de rede para detectar e responder a eventos de<br>
-segurança, como tentativas de acesso não autorizado ou comportamento malicioso.</p>
-</li>
-</ul>
-<h2 id="segregação-de-rede-1">Segregação de Rede </h2>
-<ul>
-<li>
-<p>Segmentação física usando switches e roteadores para dividir a rede em sub-redes<br>
-separadas.</p>
-</li>
-<li>
-<p>Implementação de políticas de firewall para controlar o tráfego entre segmentos de<br>
-rede, permitindo apenas o tráfego autorizado.</p>
-</li>
-<li>
-<p>Utilização de VLANs para isolar diferentes tipos de tráfego, como voz, dados e<br>
-dispositivos IoT.</p>
-</li>
-<li>
-<p>Implementação de políticas de acesso baseadas em funções (RBAC - Role-Based<br>
-Access Control) para restringir o acesso a recursos de rede com base nas<br>
-responsabilidades e privilégios dos usuários.</p>
-</li>
-</ul>
-
-      </div>
-      
-      
-    
-    
-    <script type="module">
-// TODO: If ZenUML gets integrated into mermaid in the future,
-//      we can remove the following lines.
+<head>
+  <title>NewIndex</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 
-var MERMAID_CONFIG = ({"startOnLoad":false});
-if (typeof MERMAID_CONFIG !== 'undefined') {
-  MERMAID_CONFIG.startOnLoad = false
-  MERMAID_CONFIG.cloneCssStyles = false
-  MERMAID_CONFIG.theme = "default"
-}
+  <style>
+    code[class*=language-],
+    pre[class*=language-] {
+      color: #333;
+      background: 0 0;
+      font-family: Consolas, "Liberation Mono", Menlo, Courier, monospace;
+      text-align: left;
+      white-space: pre;
+      word-spacing: normal;
+      word-break: normal;
+      word-wrap: normal;
+      line-height: 1.4;
+      -moz-tab-size: 8;
+      -o-tab-size: 8;
+      tab-size: 8;
+      -webkit-hyphens: none;
+      -moz-hyphens: none;
+      -ms-hyphens: none;
+      hyphens: none
+    }
 
-mermaid.initialize(MERMAID_CONFIG || {})
-if (typeof(window['Reveal']) !== 'undefined') {
-  function mermaidRevealHelper(event) {
-    var currentSlide = event.currentSlide
-    var diagrams = currentSlide.querySelectorAll('.mermaid')
-    for (var i = 0; i < diagrams.length; i++) {
-      var diagram = diagrams[i]
-      if (!diagram.hasAttribute('data-processed')) {
-        mermaid.init(null, diagram, ()=> {
-          Reveal.slide(event.indexh, event.indexv)
-        })
+    pre[class*=language-] {
+      padding: .8em;
+      overflow: auto;
+      border-radius: 3px;
+      background: #f5f5f5
+    }
+
+    :not(pre)>code[class*=language-] {
+      padding: .1em;
+      border-radius: .3em;
+      white-space: normal;
+      background: #f5f5f5
+    }
+
+    .token.blockquote,
+    .token.comment {
+      color: #969896
+    }
+
+    .token.cdata {
+      color: #183691
+    }
+
+    .token.doctype,
+    .token.macro.property,
+    .token.punctuation,
+    .token.variable {
+      color: #333
+    }
+
+    .token.builtin,
+    .token.important,
+    .token.keyword,
+    .token.operator,
+    .token.rule {
+      color: #a71d5d
+    }
+
+    .token.attr-value,
+    .token.regex,
+    .token.string,
+    .token.url {
+      color: #183691
+    }
+
+    .token.atrule,
+    .token.boolean,
+    .token.code,
+    .token.command,
+    .token.constant,
+    .token.entity,
+    .token.number,
+    .token.property,
+    .token.symbol {
+      color: #0086b3
+    }
+
+    .token.prolog,
+    .token.selector,
+    .token.tag {
+      color: #63a35c
+    }
+
+    .token.attr-name,
+    .token.class,
+    .token.class-name,
+    .token.function,
+    .token.id,
+    .token.namespace,
+    .token.pseudo-class,
+    .token.pseudo-element,
+    .token.url-reference .token.variable {
+      color: #795da3
+    }
+
+    .token.entity {
+      cursor: help
+    }
+
+    .token.title,
+    .token.title .token.punctuation {
+      font-weight: 700;
+      color: #1d3e81
+    }
+
+    .token.list {
+      color: #ed6a43
+    }
+
+    .token.inserted {
+      background-color: #eaffea;
+      color: #55a532
+    }
+
+    .token.deleted {
+      background-color: #ffecec;
+      color: #bd2c00
+    }
+
+    .token.bold {
+      font-weight: 700
+    }
+
+    .token.italic {
+      font-style: italic
+    }
+
+    .language-json .token.property {
+      color: #183691
+    }
+
+    .language-markup .token.tag .token.punctuation {
+      color: #333
+    }
+
+    .language-css .token.function,
+    code.language-css {
+      color: #0086b3
+    }
+
+    .language-yaml .token.atrule {
+      color: #63a35c
+    }
+
+    code.language-yaml {
+      color: #183691
+    }
+
+    .language-ruby .token.function {
+      color: #333
+    }
+
+    .language-markdown .token.url {
+      color: #795da3
+    }
+
+    .language-makefile .token.symbol {
+      color: #795da3
+    }
+
+    .language-makefile .token.variable {
+      color: #183691
+    }
+
+    .language-makefile .token.builtin {
+      color: #0086b3
+    }
+
+    .language-bash .token.keyword {
+      color: #0086b3
+    }
+
+    pre[data-line] {
+      position: relative;
+      padding: 1em 0 1em 3em
+    }
+
+    pre[data-line] .line-highlight-wrapper {
+      position: absolute;
+      top: 0;
+      left: 0;
+      background-color: transparent;
+      display: block;
+      width: 100%
+    }
+
+    pre[data-line] .line-highlight {
+      position: absolute;
+      left: 0;
+      right: 0;
+      padding: inherit 0;
+      margin-top: 1em;
+      background: hsla(24, 20%, 50%, .08);
+      background: linear-gradient(to right, hsla(24, 20%, 50%, .1) 70%, hsla(24, 20%, 50%, 0));
+      pointer-events: none;
+      line-height: inherit;
+      white-space: pre
+    }
+
+    pre[data-line] .line-highlight:before,
+    pre[data-line] .line-highlight[data-end]:after {
+      content: attr(data-start);
+      position: absolute;
+      top: .4em;
+      left: .6em;
+      min-width: 1em;
+      padding: 0 .5em;
+      background-color: hsla(24, 20%, 50%, .4);
+      color: #f4f1ef;
+      font: bold 65%/1.5 sans-serif;
+      text-align: center;
+      vertical-align: .3em;
+      border-radius: 999px;
+      text-shadow: none;
+      box-shadow: 0 1px #fff
+    }
+
+    pre[data-line] .line-highlight[data-end]:after {
+      content: attr(data-end);
+      top: auto;
+      bottom: .4em
+    }
+
+    html body {
+      font-family: 'Helvetica Neue', Helvetica, 'Segoe UI', Arial, freesans, sans-serif;
+      font-size: 16px;
+      line-height: 1.6;
+      color: #333;
+      background-color: #fff;
+      overflow: initial;
+      box-sizing: border-box;
+      word-wrap: break-word
+    }
+
+    html body>:first-child {
+      margin-top: 0
+    }
+
+    html body h1,
+    html body h2,
+    html body h3,
+    html body h4,
+    html body h5,
+    html body h6 {
+      line-height: 1.2;
+      margin-top: 1em;
+      margin-bottom: 16px;
+      color: #000
+    }
+
+    html body h1 {
+      font-size: 2.25em;
+      font-weight: 300;
+      padding-bottom: .3em
+    }
+
+    html body h2 {
+      font-size: 1.75em;
+      font-weight: 400;
+      padding-bottom: .3em
+    }
+
+    html body h3 {
+      font-size: 1.5em;
+      font-weight: 500
+    }
+
+    html body h4 {
+      font-size: 1.25em;
+      font-weight: 600
+    }
+
+    html body h5 {
+      font-size: 1.1em;
+      font-weight: 600
+    }
+
+    html body h6 {
+      font-size: 1em;
+      font-weight: 600
+    }
+
+    html body h1,
+    html body h2,
+    html body h3,
+    html body h4,
+    html body h5 {
+      font-weight: 600
+    }
+
+    html body h5 {
+      font-size: 1em
+    }
+
+    html body h6 {
+      color: #5c5c5c
+    }
+
+    html body strong {
+      color: #000
+    }
+
+    html body del {
+      color: #5c5c5c
+    }
+
+    html body a:not([href]) {
+      color: inherit;
+      text-decoration: none
+    }
+
+    html body a {
+      color: #08c;
+      text-decoration: none
+    }
+
+    html body a:hover {
+      color: #00a3f5;
+      text-decoration: none
+    }
+
+    html body img {
+      max-width: 100%
+    }
+
+    html body>p {
+      margin-top: 0;
+      margin-bottom: 16px;
+      word-wrap: break-word
+    }
+
+    html body>ol,
+    html body>ul {
+      margin-bottom: 16px
+    }
+
+    html body ol,
+    html body ul {
+      padding-left: 2em
+    }
+
+    html body ol.no-list,
+    html body ul.no-list {
+      padding: 0;
+      list-style-type: none
+    }
+
+    html body ol ol,
+    html body ol ul,
+    html body ul ol,
+    html body ul ul {
+      margin-top: 0;
+      margin-bottom: 0
+    }
+
+    html body li {
+      margin-bottom: 0
+    }
+
+    html body li.task-list-item {
+      list-style: none
+    }
+
+    html body li>p {
+      margin-top: 0;
+      margin-bottom: 0
+    }
+
+    html body .task-list-item-checkbox {
+      margin: 0 .2em .25em -1.8em;
+      vertical-align: middle
+    }
+
+    html body .task-list-item-checkbox:hover {
+      cursor: pointer
+    }
+
+    html body blockquote {
+      margin: 16px 0;
+      font-size: inherit;
+      padding: 0 15px;
+      color: #5c5c5c;
+      background-color: #f0f0f0;
+      border-left: 4px solid #d6d6d6
+    }
+
+    html body blockquote>:first-child {
+      margin-top: 0
+    }
+
+    html body blockquote>:last-child {
+      margin-bottom: 0
+    }
+
+    html body hr {
+      height: 4px;
+      margin: 32px 0;
+      background-color: #d6d6d6;
+      border: 0 none
+    }
+
+    html body table {
+      margin: 10px 0 15px 0;
+      border-collapse: collapse;
+      border-spacing: 0;
+      display: block;
+      width: 100%;
+      overflow: auto;
+      word-break: normal;
+      word-break: keep-all
+    }
+
+    html body table th {
+      font-weight: 700;
+      color: #000
+    }
+
+    html body table td,
+    html body table th {
+      border: 1px solid #d6d6d6;
+      padding: 6px 13px
+    }
+
+    html body dl {
+      padding: 0
+    }
+
+    html body dl dt {
+      padding: 0;
+      margin-top: 16px;
+      font-size: 1em;
+      font-style: italic;
+      font-weight: 700
+    }
+
+    html body dl dd {
+      padding: 0 16px;
+      margin-bottom: 16px
+    }
+
+    html body code {
+      font-family: Menlo, Monaco, Consolas, 'Courier New', monospace;
+      font-size: .85em;
+      color: #000;
+      background-color: #f0f0f0;
+      border-radius: 3px;
+      padding: .2em 0
+    }
+
+    html body code::after,
+    html body code::before {
+      letter-spacing: -.2em;
+      content: '\00a0'
+    }
+
+    html body pre>code {
+      padding: 0;
+      margin: 0;
+      word-break: normal;
+      white-space: pre;
+      background: 0 0;
+      border: 0
+    }
+
+    html body .highlight {
+      margin-bottom: 16px
+    }
+
+    html body .highlight pre,
+    html body pre {
+      padding: 1em;
+      overflow: auto;
+      line-height: 1.45;
+      border: #d6d6d6;
+      border-radius: 3px
+    }
+
+    html body .highlight pre {
+      margin-bottom: 0;
+      word-break: normal
+    }
+
+    html body pre code,
+    html body pre tt {
+      display: inline;
+      max-width: initial;
+      padding: 0;
+      margin: 0;
+      overflow: initial;
+      line-height: inherit;
+      word-wrap: normal;
+      background-color: transparent;
+      border: 0
+    }
+
+    html body pre code:after,
+    html body pre code:before,
+    html body pre tt:after,
+    html body pre tt:before {
+      content: normal
+    }
+
+    html body blockquote,
+    html body dl,
+    html body ol,
+    html body p,
+    html body pre,
+    html body ul {
+      margin-top: 0;
+      margin-bottom: 16px
+    }
+
+    html body kbd {
+      color: #000;
+      border: 1px solid #d6d6d6;
+      border-bottom: 2px solid #c7c7c7;
+      padding: 2px 4px;
+      background-color: #f0f0f0;
+      border-radius: 3px
+    }
+
+    @media print {
+      html body {
+        background-color: #fff
+      }
+
+      html body h1,
+      html body h2,
+      html body h3,
+      html body h4,
+      html body h5,
+      html body h6 {
+        color: #000;
+        page-break-after: avoid
+      }
+
+      html body blockquote {
+        color: #5c5c5c
+      }
+
+      html body pre {
+        page-break-inside: avoid
+      }
+
+      html body table {
+        display: table
+      }
+
+      html body img {
+        display: block;
+        max-width: 100%;
+        max-height: 100%
+      }
+
+      html body code,
+      html body pre {
+        word-wrap: break-word;
+        white-space: pre
       }
     }
-  }
-  Reveal.addEventListener('slidetransitionend', mermaidRevealHelper)
-  Reveal.addEventListener('ready', mermaidRevealHelper)
-  await mermaid.run({
-    nodes: document.querySelectorAll('.mermaid')
-  })
-} else {
-  await mermaid.run({
-    nodes: document.querySelectorAll('.mermaid')
-  })
-}
-</script>
-    
-    
-    
-  
-    </body></html>
+
+    .markdown-preview {
+      width: 100%;
+      height: 100%;
+      box-sizing: border-box
+    }
+
+    .markdown-preview ul {
+      list-style: disc
+    }
+
+    .markdown-preview ul ul {
+      list-style: circle
+    }
+
+    .markdown-preview ul ul ul {
+      list-style: square
+    }
+
+    .markdown-preview ol {
+      list-style: decimal
+    }
+
+    .markdown-preview ol ol,
+    .markdown-preview ul ol {
+      list-style-type: lower-roman
+    }
+
+    .markdown-preview ol ol ol,
+    .markdown-preview ol ul ol,
+    .markdown-preview ul ol ol,
+    .markdown-preview ul ul ol {
+      list-style-type: lower-alpha
+    }
+
+    .markdown-preview .newpage,
+    .markdown-preview .pagebreak {
+      page-break-before: always
+    }
+
+    .markdown-preview pre.line-numbers {
+      position: relative;
+      padding-left: 3.8em;
+      counter-reset: linenumber
+    }
+
+    .markdown-preview pre.line-numbers>code {
+      position: relative
+    }
+
+    .markdown-preview pre.line-numbers .line-numbers-rows {
+      position: absolute;
+      pointer-events: none;
+      top: 1em;
+      font-size: 100%;
+      left: 0;
+      width: 3em;
+      letter-spacing: -1px;
+      border-right: 1px solid #999;
+      -webkit-user-select: none;
+      -moz-user-select: none;
+      -ms-user-select: none;
+      user-select: none
+    }
+
+    .markdown-preview pre.line-numbers .line-numbers-rows>span {
+      pointer-events: none;
+      display: block;
+      counter-increment: linenumber
+    }
+
+    .markdown-preview pre.line-numbers .line-numbers-rows>span:before {
+      content: counter(linenumber);
+      color: #999;
+      display: block;
+      padding-right: .8em;
+      text-align: right
+    }
+
+    .markdown-preview .mathjax-exps .MathJax_Display {
+      text-align: center !important
+    }
+
+    .markdown-preview:not([data-for=preview]) .code-chunk .code-chunk-btn-group {
+      display: none
+    }
+
+    .markdown-preview:not([data-for=preview]) .code-chunk .status {
+      display: none
+    }
+
+    .markdown-preview:not([data-for=preview]) .code-chunk .output-div {
+      margin-bottom: 16px
+    }
+
+    .markdown-preview .md-toc {
+      padding: 0
+    }
+
+    .markdown-preview .md-toc .md-toc-link-wrapper .md-toc-link {
+      display: inline;
+      padding: .25rem 0
+    }
+
+    .markdown-preview .md-toc .md-toc-link-wrapper .md-toc-link div,
+    .markdown-preview .md-toc .md-toc-link-wrapper .md-toc-link p {
+      display: inline
+    }
+
+    .markdown-preview .md-toc .md-toc-link-wrapper.highlighted .md-toc-link {
+      font-weight: 800
+    }
+
+    .scrollbar-style::-webkit-scrollbar {
+      width: 8px
+    }
+
+    .scrollbar-style::-webkit-scrollbar-track {
+      border-radius: 10px;
+      background-color: transparent
+    }
+
+    .scrollbar-style::-webkit-scrollbar-thumb {
+      border-radius: 5px;
+      background-color: rgba(150, 150, 150, .66);
+      border: 4px solid rgba(150, 150, 150, .66);
+      background-clip: content-box
+    }
+
+    html body[for=html-export]:not([data-presentation-mode]) {
+      position: relative;
+      width: 100%;
+      height: 100%;
+      top: 0;
+      left: 0;
+      margin: 0;
+      padding: 0;
+      overflow: auto
+    }
+
+    html body[for=html-export]:not([data-presentation-mode]) .markdown-preview {
+      position: relative;
+      top: 0;
+      min-height: 100vh
+    }
+
+    @media screen and (min-width:914px) {
+      html body[for=html-export]:not([data-presentation-mode]) .markdown-preview {
+        padding: 2em calc(50% - 457px + 2em)
+      }
+    }
+
+    @media screen and (max-width:914px) {
+      html body[for=html-export]:not([data-presentation-mode]) .markdown-preview {
+        padding: 2em
+      }
+    }
+
+    @media screen and (max-width:450px) {
+      html body[for=html-export]:not([data-presentation-mode]) .markdown-preview {
+        font-size: 14px !important;
+        padding: 1em
+      }
+    }
+
+    @media print {
+      html body[for=html-export]:not([data-presentation-mode]) #sidebar-toc-btn {
+        display: none
+      }
+    }
+
+    html body[for=html-export]:not([data-presentation-mode]) #sidebar-toc-btn {
+      position: fixed;
+      bottom: 8px;
+      left: 8px;
+      font-size: 28px;
+      cursor: pointer;
+      color: inherit;
+      z-index: 99;
+      width: 32px;
+      text-align: center;
+      opacity: .4
+    }
+
+    html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] #sidebar-toc-btn {
+      opacity: 1
+    }
+
+    html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 300px;
+      height: 100%;
+      padding: 32px 0 48px 0;
+      font-size: 14px;
+      box-shadow: 0 0 4px rgba(150, 150, 150, .33);
+      box-sizing: border-box;
+      overflow: auto;
+      background-color: inherit
+    }
+
+    html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc::-webkit-scrollbar {
+      width: 8px
+    }
+
+    html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc::-webkit-scrollbar-track {
+      border-radius: 10px;
+      background-color: transparent
+    }
+
+    html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc::-webkit-scrollbar-thumb {
+      border-radius: 5px;
+      background-color: rgba(150, 150, 150, .66);
+      border: 4px solid rgba(150, 150, 150, .66);
+      background-clip: content-box
+    }
+
+    html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc a {
+      text-decoration: none
+    }
+
+    html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc .md-toc {
+      padding: 0 16px
+    }
+
+    html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc .md-toc .md-toc-link-wrapper .md-toc-link {
+      display: inline;
+      padding: .25rem 0
+    }
+
+    html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc .md-toc .md-toc-link-wrapper .md-toc-link div,
+    html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc .md-toc .md-toc-link-wrapper .md-toc-link p {
+      display: inline
+    }
+
+    html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc .md-toc .md-toc-link-wrapper.highlighted .md-toc-link {
+      font-weight: 800
+    }
+
+    html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .markdown-preview {
+      left: 300px;
+      width: calc(100% - 300px);
+      padding: 2em calc(50% - 457px - 300px / 2);
+      margin: 0;
+      box-sizing: border-box
+    }
+
+    @media screen and (max-width:1274px) {
+      html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .markdown-preview {
+        padding: 2em
+      }
+    }
+
+    @media screen and (max-width:450px) {
+      html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .markdown-preview {
+        width: 100%
+      }
+    }
+
+    html body[for=html-export]:not([data-presentation-mode]):not([html-show-sidebar-toc]) .markdown-preview {
+      left: 50%;
+      transform: translateX(-50%)
+    }
+
+    html body[for=html-export]:not([data-presentation-mode]):not([html-show-sidebar-toc]) .md-sidebar-toc {
+      display: none
+    }
+
+    /* Please visit the URL below for more information: */
+    /*   https://shd101wyy.github.io/markdown-preview-enhanced/#/customize-css */
+  </style>
+  <!-- The content below will be included at the end of the <head> element. -->
+  <script type="text/javascript">
+    document.addEventListener("DOMContentLoaded", function () {
+      // your code here
+    });
+  </script>
+</head>
+
+<body for="html-export">
+
+
+  <div class="crossnote markdown-preview  ">
+
+    <h1 id="politica-de-segurança-de-informação">Politica de Segurança de informação </h1>
+    <p>
+      Toda empresa deve se adquar ao regras e padroes,devendo ser adequadamente utilizado e protegido contra
+      <strong>riscos</strong>, <strong>ameaças</strong>, <strong>violações</strong>, <strong>acessos não
+        autorizados</strong> e <strong>danos</strong>.<br>
+      É imprescindível, portanto, a adoção de condutas, normas e<br>
+      procedimentos padronizados que tenham como objetivo garantir a proteção dos três<br>
+      aspectos básicos da segurança da informação:</p>
+    <ul>
+      <li>confidencialidade.</li>
+      <li>integridade.</li>
+      <li>disponibilidade.</li>
+    </ul>
+    <p>Pois tem por objetivo possibilitar o gerenciamento<br>
+      da segurança em uma organização, estabelecendo regras e padrões para proteção<br>
+      da informação.<br>
+      A política possibilita manter a confidencialidade, garantir que a informação<br>
+      não seja alterada ou perdida e permitir que a informação esteja disponível quando for necessário.</p>
+    <h2 id="politicas-aplicadas">Politicas aplicadas </h2>
+    <p><a
+        href="https://www.in.gov.br/materia/-/asset_publisher/Kujrw0TZC2Mb/content/id/56970098/do1-2018-12-27-decreto-n-9-637-de-26-de-dezembro-de-2018-56969938">Política
+        Nacional de Segurança da Informação</a></p>
+    <p><a href="https://www.planalto.gov.br/ccivil_03/_ato2011-2014/2014/lei/l12965.htm">Marco Civil da Internet</a></p>
+    <h2 id="dispositivos-movel-e-teeltrabalho">Dispositivos movel e Teeltrabalho </h2>
+    <h3 id="dispositivos-móveis-ou-uquipamentos-eletronicos">Dispositivos móveis ou uquipamentos eletronicos </h3>
+    <p><strong>Anexo A.6.2.1.</strong></p>
+    <p>É estritamente proibido o uso de dispositivos móveis de uso pessoal em todos os setores e locais da empresa.
+      Somente aparelhos fornecidos pelo empregador estão autorizados para uso durante o expediente.</p>
+    <p>Somente serão tolerados <em>Dispositivos móveis</em> , <em>Notebooks</em> ou <em>Dispositivos Eletronicos</em>
+      pessoais em locais indicados:</p>
+    <ul>
+      <li>Portaria</li>
+      <li>Refeitorio</li>
+      <li>Sala de Espera</li>
+      <li>Área de descompressão</li>
+      <li>Área Indicadas com placas de sinalização</li>
+    </ul>
+    <h3 id="teletrabalho-ou-trabalho-remoto">Teletrabalho ou Trabalho Remoto </h3>
+    <p><strong>Anexo A.6.2.2.</strong></p>
+    <p>Todo e qualquer trabalho remoto deve ser comunicado com um aviso prévio de 1 semana para que sejam implementadas
+      as medidas de segurança necessárias para controle de acesso à rede de forma remota.</p>
+    <p>O colaborador terá acesso a um dispositivo fornecido pelo empregador, um Notebook Dell Nitro 5, com código de
+      identificação específico, estando acordado entre as partes o seguinte:</p>
+    <ul>
+      <li>É proibida a instalação ou execução de programas ou aplicações que não tenham sido fornecidos pelo empregador.
+      </li>
+      <li>O uso de proxy ou VPNs que não sejam fornecidos pela empresa é estritamente proibido.</li>
+      <li>A destruição ou adulteração do sistema operacional do dispositivo será considerada uma conduta antiética,
+        sujeita a penalidades administrativas.</li>
+      <li>Não será aceito o uso de dispositivos incompatíveis com o número de série fornecido ou com hardware diferente
+        do especificado.</li>
+      <li>O colaborador tem a obrigação de seguir as normas de Segurança da Informação, mesmo durante o trabalho remoto.
+      </li>
+      <li>A devolução do aparelho deve ser feita no prazo acordado</li>
+    </ul>
+    <h2 id="adequação-ou-elaboração-de-cláusulas-contratuais--informativos-para-rh">Adequação ou elaboração de cláusulas
+      contratuais / informativos para RH </h2>
+    <h3 id="a712-termos-e-condiçoes-de-contratação">A.7.1.2 Termos e condiçoes de contratação </h3>
+    <p>Durante as etapas de recrutamento, seleção e admissão do novo colaborador,podem ser solicitados, informações
+      básicas do profissional, como nome completo, endereço, número de telefone, e-mail, data de nascimento, estado
+      civil, nacionalidade, número de identidade e CPF.</p>
+    <p>Possível incluir informações relacionadas à formação acadêmica do candidato, experiência profissional,
+      habilidades, referências, salário anterior e expectativas salariais.</p>
+    <p><em>Sem que isso signifique qualquer descumprimento à LGPD.</em></p>
+    <p>No entanto, é importante lembrar que a coleta de dados sensíveis, como etnia, religião, orientação sexual, entre
+      outras, é proibida,sem o consentimento co titular, pela lei, a menos que haja uma justificativa legal ou
+      consentimento explicito.</p>
+    <details>
+      <summary>LGPD Artigo 11,Artigo 12,Artigo 13</summary>
+      <p><strong>Artigo 11</strong></p>
+      <pre class="language-text">Caput: O tratamento de dados pessoais sensíveis somente pode ocorrer nas seguintes hipóteses:
+</pre>
+      <p>I - Quando o titular ou seu responsável legal consentir, de forma específica e destacada, para finalidades
+        específicas.</p>
+      <p>II - Sem fornecimento de consentimento do titular, nas hipóteses em que for indispensável para:</p>
+      <ul>
+        <li>
+          <p>cumprimento de obrigação legal ou regulatória pelo controlador;</p>
+        </li>
+        <li>
+          <p>tratamento e uso compartilhado de dados necessários à execução, pela administração pública, de políticas
+            públicas previstas em leis ou regulamentos;</p>
+        </li>
+        <li>
+          <p>realização de estudos por órgão de pesquisa, garantida, sempre que possível, a anonimização dos dados
+            pessoais sensíveis;</p>
+        </li>
+        <li>
+          <p>exercício regular de direitos, inclusive em contrato e em processo judicial, administrativo e arbitral;</p>
+        </li>
+        <li>
+          <p>proteção da vida ou da incolumidade física do titular ou de terceiro;</p>
+        </li>
+        <li>
+          <p>tutela da saúde, exclusivamente, em procedimento realizado por profissionais de saúde, serviços de saúde ou
+            autoridade sanitária;</p>
+        </li>
+        <li>
+          <p>garantia da prevenção à fraude e à segurança do titular, nos processos de identificação e autenticação de
+            cadastro em sistemas eletrônicos.</p>
+        </li>
+      </ul>
+      <p><strong>Artigo 12</strong></p>
+      <pre class="language-text">Caput: Nos casos em que o tratamento de dados pessoais sensíveis se der sem o consentimento do titular, será necessário, sempre que possível, a anonimização dos dados pessoais sensíveis.
+</pre>
+    </details>
+    <br>
+    <h3 id="a722-trinamentos">A.7.2.2 Trinamentos </h3>
+    <p>Todos os novos colaboradores e contratados devem completar um treinamento de integração em segurança da
+      informação antes de obter acesso aos sistemas de informação da empresa.</p>
+    <p>O treinamento deve cobrir:</p>
+    <ul>
+      <li>Políticas de segurança da informação</li>
+      <li>Procedimentos de segurança</li>
+      <li>Boas práticas de segurança</li>
+      <li>Responsabilidades do colaborador</li>
+    </ul>
+    <p>Treinamentos regulares devem ser realizados para todos os colaboradores, com frequência mínima anual.</p>
+    <p>Os treinamentos contínuos devem incluir:</p>
+    <ul>
+      <li>Atualizações de políticas e procedimentos</li>
+      <li>Novas ameaças e vulnerabilidades</li>
+      <li>Simulações de incidentes de segurança</li>
+      <li>Revisões de boas práticas</li>
+    </ul>
+    <p>Colaboradores em funções críticas ou com acesso a informações sensíveis devem receber treinamento adicional
+      específico para suas responsabilidades.<br>
+      Exemplos incluem:</p>
+    <ul>
+      <li>Administração de sistemas e rede ou equipe de TI</li>
+      <li>Recursos Humanos(RH)</li>
+    </ul>
+    <p>Todos os treinamentos devem incluir uma avaliação para medir a compreensão e a retenção dos conhecimentos.</p>
+    <p>Resultados das avaliações devem ser monitorados para identificar áreas de melhoria e ajustar os programas de
+      treinamento conforme necessário.</p>
+    <p>Relatórios de participação e desempenho nos treinamentos devem ser mantidos e revisados periodicamente.</p>
+    <h3 id="enserramento-ou-mudança-na-contratação-ou-acesso">Enserramento ou mudança na contratação ou acesso </h3>
+    <p><strong>A.7.3.1</strong></p>
+    <p>O Departamento de Recursos Humanos (RH) terá acesso restrito ao sistema para exclusão de Colaboradores de Baixo
+      Privilégio.</p>
+    <p>O cancelamento de acesso será requisitado diretamente ao RH, e após a confirmação do cancelamento, o prazo para
+      efetivar a exclusão de acesso do colaborador no sistema será de <strong>1 hora</strong>.</p>
+    <p>O aumento de privilégios de colaboradores será realizado pela equipe de TI, mediante autorização do Departamento
+      de Recursos Humanos (RH), conforme acordado entre ambas as partes. Um exemplo do procedimento:</p>
+    <ul>
+      <li>Identificação (ID) ou Nome Completo do funcionário.</li>
+      <li>Setor em que trabalha.</li>
+      <li>Novo tipo de privilégio ou área a frequentar.</li>
+    </ul>
+    <p><em>Após a mitigação pelo setor de TI, o privilégio será aplicado. O acesso pode ser negado caso haja uma
+        indevida atribuição de tarefas ou área/setor incompatível com o quadrante do funcionário.</em></p>
+    <h2 id="porteção-e-controle-de-ativos">Porteção e controle de Ativos </h2>
+    <p><strong>A.8.1.1</strong></p>
+    <p>Todos os ativos de informação devem ser identificados e registrados no inventário de ativos.</p>
+    <p>O inventário deve incluir, mas não se limitar a:</p>
+    <ul>
+      <li>Hardware (servidores, computadores, dispositivos móveis)</li>
+      <li>Software (sistemas operacionais, aplicativos, licenças)</li>
+      <li>Dados e informações (bancos de dados, arquivos, documentos)</li>
+      <li>Dispositivos de armazenamento (discos rígidos, pen drives)</li>
+      <li>Recursos de rede (roteadores, switches, firewalls)</li>
+      <li>Outros recursos (mídias de backup, documentos impressos)</li>
+    </ul>
+    <p>Cada ativo no inventário deve incluir informações detalhadas, como:</p>
+    <ul>
+      <li>Descrição do ativo</li>
+      <li>Proprietário do ativo</li>
+      <li>Localização física ou lógica</li>
+      <li>Valor ou importância do ativo</li>
+      <li>Data de aquisição</li>
+      <li>Estado ou condição atual</li>
+      <li>Medidas de segurança aplicáveis</li>
+      <li>Data da última revisão ou atualização do inventário</li>
+    </ul>
+    <table>
+      <thead>
+        <tr>
+          <th>Descrição do ativo</th>
+          <th>Proprietário do ativo</th>
+          <th>Localização física ou lógica</th>
+          <th>Valor ou importância do ativo</th>
+          <th>Data de aquisição</th>
+          <th>Estado ou condição atual</th>
+          <th>Medidas de segurança aplicáveis</th>
+          <th>Data da última revisão ou atualização do inventário</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Servidor de Banco de Dados Primário</td>
+          <td>João Silva</td>
+          <td>Data Center, Rack 3, Unidade 5</td>
+          <td>Alto</td>
+          <td>15/02/2021</td>
+          <td>Em operação</td>
+          <td>Controle de acesso biométrico, criptografia de dados, firewall dedicado</td>
+          <td>01/03/2024</td>
+        </tr>
+      </tbody>
+    </table>
+    <p>O inventário de ativos deve ser atualizado regularmente para refletir adições, mudanças ou descomissionamentos de
+      ativos e Revisões periódicas (pelo menos anualmente) devem ser realizadas para garantir a precisão e a completude
+      do inventário.</p>
+    <p>Medidas de segurança apropriadas devem ser implementadas para proteger cada ativo, conforme sua classificação e
+      valor exemplos de medidas de proteção incluem controle de acesso, criptografia, backups regulares e monitoramento
+      de segurança.</p>
+    <p>Todos os colaboradores devem receber treinamento sobre a importância do inventário de ativos e suas
+      responsabilidades na manutenção e proteção dos ativos e sessões de conscientização devem ser realizadas
+      regularmente para manter o conhecimento atualizado.</p>
+    <p><strong>A.8.1.2</strong></p>
+    <p>Cada ativo deve ter um proprietário designado,da equipe de TI, que será responsávelpela gestão e proteção do
+      ativo.</p>
+    <ul>
+      <li>Assegurar que o ativo seja adequadamente registrado no inventário.</li>
+      <li>Garantir que as medidas de segurança apropriadas sejam implementadas e mantidas.</li>
+      <li>Monitorar o uso do ativo e relatar qualquer incidente de segurança.</li>
+    </ul>
+    <p><strong>A.8.1.3</strong></p>
+    <p>Os ativos de informação devem ser utilizados de maneira responsável e ética, exclusivamente para fins
+      relacionados às atividades da empresa.</p>
+    <p>Os colaboradores e contratados devem seguir as diretrizes de uso aceitável, que incluem:</p>
+    <ul>
+      <li>
+        <p>Uso Autorizado:</p>
+        <ul>
+          <li>Utilizar os ativos apenas para tarefas autorizadas e relacionadas ao trabalho.<br>
+            Proteção dos Ativos: Não compartilhar informações sensíveis com pessoas não autorizadas e proteger os ativos
+            contra acesso não autorizado.</li>
+        </ul>
+      </li>
+      <li>
+        <p>Conformidade com Leis e Políticas:</p>
+        <ul>
+          <li>Cumprir todas as leis aplicáveis, regulamentações e políticas internas da empresa.</li>
+        </ul>
+      </li>
+      <li>
+        <p>Respeito aos Direitos de Propriedade Intelectual:</p>
+        <ul>
+          <li>Não copiar ou distribuir software ou outras propriedades intelectuais sem permissão adequada.<br>
+            Uso da Internet e E-mail: Usar a internet e o e-mail corporativo de maneira apropriada, evitando atividades
+            ilegais ou inadequadas.</li>
+        </ul>
+      </li>
+      <li>
+        <p>Consequências do Uso Indevido:</p>
+        <ul>
+          <li>O uso inadequado dos ativos pode resultar em medidas disciplinares, que podem incluir advertências,
+            suspensão ou demissão, conforme a gravidade da violação.</li>
+        </ul>
+      </li>
+    </ul>
+    <h2 id="rotulos-e-tratamento">Rotulos e tratamento </h2>
+    <p><strong>A.8.2</strong></p>
+    <p><strong>Categorias de Classificação:</strong></p>
+    <p>Toda informação deve ser rotulada de acordo com a sua classificação.<br>
+      Rótulos devem ser claramente visíveis e legíveis, e aplicados tanto a informações físicas quanto digitais.</p>
+    <ul>
+      <li>Confidencial:
+        <ul>
+          <li>Informação cujo acesso é restrito e cuja divulgação não autorizada pode causar danos significativos à
+            empresa.</li>
+        </ul>
+      </li>
+      <li>Interno:
+        <ul>
+          <li>Informação que é destinada ao uso interno da empresa e cuja divulgação não autorizada pode causar danos
+            moderados.</li>
+        </ul>
+      </li>
+      <li>Público:
+        <ul>
+          <li>Informação que pode ser divulgada sem restrições e cujo acesso é irrestrito.</li>
+        </ul>
+      </li>
+    </ul>
+    <p><em>Toda informação deve ser rotulada de acordo com a sua classificação.</em><br>
+      <em>Rótulos devem ser claramente visíveis e legíveis, e aplicados tanto a informações físicas quanto
+        digitais.</em>
+    </p>
+    <p><strong>Tratamento da Informação.</strong></p>
+    <ul>
+      <li>Confidencial:
+        <ul>
+          <li>Deve ser acessada somente por pessoal autorizado, armazenada em locais seguros, e transmitida usando
+            métodos criptografados.</li>
+        </ul>
+      </li>
+      <li>Interno:
+        <ul>
+          <li>Deve ser acessada por funcionários e parceiros conforme necessário, armazenada em áreas controladas, e
+            transmitida usando métodos seguros.</li>
+        </ul>
+      </li>
+      <li>Público:
+        <ul>
+          <li>Pode ser acessada e distribuída livremente, mas deve ser protegida contra alterações não autorizadas.</li>
+        </ul>
+      </li>
+    </ul>
+    <p><strong>Ciclo de Vida da Informação.</strong></p>
+    <p>Garantir que a informação seja corretamente classificada e rotulada no momento da criação.</p>
+    <div class="mermaid"> graph LR;
+      Criação --&gt;Armazenamento;
+      Armazenamento --&gt; Criptografia;
+      Armazenamento --&gt;nodeId[(Dados Persistentes)];
+      Criptografia --&gt; Transmissão --&gt; Descarte;
+      Transmissão --&gt; nodeId;
+    </div>
+    <p><strong>Criação</strong>: Garantir que a informação seja corretamente classificada e rotulada no momento da
+      criação.</p>
+    <p><strong>Armazenamento</strong>: Proteger a informação conforme sua classificação, utilizando controles de acesso
+      apropriados.</p>
+    <p><strong>Transmissão</strong>: Utilizar métodos seguros para transmitir informações sensíveis, como criptografia
+      para dados confidenciais.</p>
+    <p><strong>Descarte</strong>: Descartar informações de maneira segura conforme sua classificação, incluindo a
+      destruição física de mídias e a exclusão segura de arquivos digitais.</p>
+    <h3 id="tratamento-de-mídias-removíveis">Tratamento de Mídias Removíveis </h3>
+    <p><strong>A.8.3.</strong></p>
+    <p>Mídias removíveis, como pen drives, CDs, DVDs e discos externos, devem ser gerenciadas para garantir a proteção
+      adequada das informações armazenadas.<br>
+      Acesso a mídias removíveis deve ser restrito a pessoal autorizado.</p>
+    <p><strong>Descarte.</strong></p>
+    <ul>
+      <li>Mídias removíveis que não são mais necessárias devem ser descartadas de maneira segura.</li>
+      <li>Procedimentos de descarte seguro incluem a destruição física das mídias ou a exclusão segura dos dados,
+        conforme apropriado.</li>
+      <li>O descarte deve ser registrado e documentado, incluindo a data e o método de descarte.</li>
+    </ul>
+    <p><strong>Transferência.</strong></p>
+    <ul>
+      <li>
+        <p>A transferência de informações em mídias removíveis deve ser realizada de forma segura para evitar acesso não
+          autorizado.</p>
+      </li>
+      <li>
+        <p>Informações confidenciais transferidas em mídias removíveis devem ser criptografadas.</p>
+      </li>
+      <li>
+        <p>Mídias removíveis devem ser transportadas em condições seguras, com controle rigoroso de acesso durante todo
+          o processo de transferência.</p>
+      </li>
+    </ul>
+    <h2 id="politica-de-controle-de-acesso-fisico">Politica de controle de acesso Fisico </h2>
+    <p><strong>A.9.1.1.</strong></p>
+    <p>O acesso às dependências da empresa é estritamente reservado para funcionários e terceiros devidamente
+      cadastrados. Qualquer indivíduo que não atenda aos padrões estabelecidos poderá ser considerado uma ameaça à
+      segurança, tanto física quanto lógica.</p>
+    <p>O cesso fisico e Feito em Etapas e é segmentado em tada a empressa.</p>
+    <p>Temos dois blocos de acesso quais chamamos de Predio e Galpão com seus setores.</p>
+    <p><strong>Galpão:</strong></p>
+    <div class="mermaid">block-beta
+
+      columns 4
+
+      refeitorio Docas:3
+      Faturamento Trasporte:3
+      Banheiro Estoque:3
+
+    </div>
+    <p><strong>Predio:</strong></p>
+    <div class="mermaid">block-beta
+      columns 4
+      TI:2
+      Direção:2
+      Financeiro:4
+      Faturamento:2
+      Compras:2
+    </div>
+    <p><strong>Visão Geral.</strong></p>
+    <p>O controle de acesso principal sera na entrada ou Portaria<br>
+      onde apos a validação sera liberado o acesso ao funiconario.</p>
+    <div class="mermaid">block-beta
+      columns 4
+      Catraca:1
+      Portaria:2
+      Veiculos:1
+    </div>
+    <p><strong>Veiculos:</strong></p>
+    <p><img src="./img/Veiculos1.png" alt="Alternate text"></p>
+    <p><img src="./img/Veiculos2.png" alt="Alternate text"></p>
+    <p><strong>Troniquete:</strong></p>
+    <p><img src="./img/FacilaTorniquete.png" alt="Alternate text"></p>
+    <p><strong>Tipos para escritorio ,sala instalações:</strong></p>
+    <p>Salas Livre sendo elas:</p>
+    <ul>
+      <li>Refeitorio</li>
+      <li>Salas de descompressão</li>
+      <li>Banheiros</li>
+    </ul>
+    <p>Contarão com controle pormeio do sistema de reconhecimento facial<br>
+      com controles mais simples:</p>
+    <p><img src="./img/controle-de-acesso-pedestal-1024x1024.jpg" alt="Alternate text"></p>
+    <p>Portas de nivel 1 como:</p>
+    <ul>
+      <li>Faruramento</li>
+      <li>Financeiro</li>
+      <li>Compras</li>
+    </ul>
+    <p>Terao sistema de reconhecimento facil:</p>
+    <p><img src="./img/a_2_25.jpg" alt="Alternate text"></p>
+    <p>Portas de nivel 2 como:</p>
+    <ul>
+      <li>TI</li>
+      <li>Estoque</li>
+      <li>Direção</li>
+    </ul>
+    <p>Terão reconehcimento facil + biometria para maior segurança:</p>
+    <p><img src="./img/Senior_Montagem-2%20(1).jpg" alt="Alternate text"></p>
+    <p><strong>A.9.3.</strong></p>
+    <p>Os funcionários estão obrigados a seguir as condutas de segurança listadas a seguir:</p>
+    <ul>
+      <li>
+        <p>Acesso restrito ao setor designado ou autorizado por seu superior.</p>
+      </li>
+      <li>
+        <p>É terminantemente proibido o acesso aos setores de trabalho portando itens pessoais.</p>
+      </li>
+      <li>
+        <p>Dispositivos móveis podem ser levados, desde que estejam em conformidade com as restrições e obrigações de
+          conduta estabelecidas neste documento.</p>
+      </li>
+      <li>
+        <p>É absolutamente inadmissível a entrada, por qualquer meio, de familiares, amigos ou funcionários em setores
+          utilizando credenciais pertencentes a terceiros.</p>
+      </li>
+    </ul>
+    <p><strong>Cadastro:</strong></p>
+    <p>O cadastro do colaborador será realizado após a efetiva contratação, mediante sua assinatura nos termos de
+      privacidade fornecidos pelo Departamento de Recursos Humanos no momento da contratação. Durante esse processo,
+      serão requeridos os seguintes dados:</p>
+    <ul>
+      <li>Fotografia para reconhecimento facial (podendo ser única ou múltipla).</li>
+      <li>Coleta de impressão digital.</li>
+      <li>Placa do veículo (opcional).</li>
+    </ul>
+    <p>Tais dados serão salvos e armazenados para o controle de acesso físico dos colaboradores. Além disso, será
+      fornecido um login com senha para acesso à rede Wi-Fi livre do local.</p>
+    <p>Dando assim acesso de Baixo nivel ao Colaborador.</p>
+    <p><em>Usuarios de Medio e Alto nivel serão cadastrados pelo setor de TI.</em></p>
+    <p><strong>Atualização de permissão:</strong></p>
+    <p><em>No caso de necessidade de atualização cadastral, o colaborador poderá realizar tal procedimento na portaria,
+        mediante a apresentação de documentos como CPF, RG ou CNH.</em></p>
+    <p>O aumento de privilégios de colaboradores será realizado pela equipe de TI, mediante autorização do Departamento
+      de Recursos Humanos (RH), conforme acordado entre ambas as partes. Um exemplo do procedimento:</p>
+    <ul>
+      <li>Identificação (ID) ou Nome Completo do funcionário.</li>
+      <li>Setor em que trabalha.</li>
+      <li>Novo tipo de privilégio ou área a frequentar.</li>
+    </ul>
+    <p><em>Após a mitigação pelo setor de TI, o privilégio será aplicado. O acesso pode ser negado caso haja uma
+        indevida atribuição de tarefas ou área/setor incompatível com o quadrante do funcionário.</em></p>
+    <h2 id="respomsabilidade-do-usuario">Respomsabilidade do Usuario </h2>
+    <p><strong>A.9.3:</strong></p>
+    <p>Os funcionários estão obrigados a seguir as condutas de segurança listadas a seguir:</p>
+    <ul>
+      <li>
+        <p>Acesso restrito ao setor designado ou autorizado por seu superior.</p>
+      </li>
+      <li>
+        <p>É terminantemente proibido o acesso aos setores de trabalho portando itens pessoais.</p>
+      </li>
+      <li>
+        <p>Dispositivos móveis podem ser levados, desde que estejam em conformidade com as restrições e obrigações de
+          conduta estabelecidas neste documento.</p>
+      </li>
+      <li>
+        <p>É absolutamente inadmissível a entrada, por qualquer meio, de familiares, amigos ou funcionários em setores
+          utilizando credenciais pertencentes a terceiros.</p>
+      </li>
+    </ul>
+    <h2 id="acesso-a-rede-servicos-de-rede">Acesso a rede servicos de rede </h2>
+    <p><strong>A.9.1.2:</strong></p>
+    <h3 id="acesso-a-rede-serviços-de-rede">Acesso a rede serviços de rede </h3>
+    <p><strong>Controle de Acesso:</strong></p>
+    <ul>
+      <li>
+        <p>Autenticação: Todos os funcionários devem usar credenciais únicas para acessar a rede.<br>
+          Senhas devem ser fortes e atualizadas regularmente.</p>
+      </li>
+      <li>
+        <p>Autorização: O acesso aos recursos de rede deve ser baseado no princípio de menor<br>
+          privilégio. Somente conceder acesso necessário para a realização das funções do funcionário.</p>
+      </li>
+      <li>
+        <p>Registro de Acesso: Mantenha um registro detalhado de todos os acessos à rede e serviços<br>
+          de rede para auditoria e monitoramento.</p>
+      </li>
+    </ul>
+    <p><strong>Políticas de Senhas:</strong></p>
+    <ul>
+      <li>
+        <p>Complexidade das Senhas: Senhas devem ter, no mínimo, 8 caracteres, incluindo letras<br>
+          maiúsculas, minúsculas, números e símbolos especiais.</p>
+      </li>
+      <li>
+        <p>Troca Periódica: As senhas devem ser trocadas a cada 90 dias.</p>
+      </li>
+      <li>
+        <p>Gestão de Senhas: Proibir o uso de senhas reutilizadas ou óbvias.</p>
+      </li>
+    </ul>
+    <p><strong>Uso de Redes Seguras:</strong></p>
+    <ul>
+      <li>
+        <p>VPN: Requerer o uso de VPN para acesso remoto à rede corporativa.</p>
+      </li>
+      <li>
+        <p>Wi-Fi Seguro: Redes Wi-Fi corporativas devem ser protegidas por criptografia WPA3 e senhas<br>
+          seguras.</p>
+      </li>
+      <li>
+        <p>Segregação de Redes: Segregar redes internas (por exemplo, administração, operações) de<br>
+          redes de visitantes e dispositivos IoT.</p>
+      </li>
+    </ul>
+    <p><strong>Proteção contra Ameaças:</strong></p>
+    <ul>
+      <li>
+        <p>Firewall: Implementar e manter firewalls para proteger a rede contra acessos não<br>
+          autorizados e ataques externos.</p>
+      </li>
+      <li>
+        <p>Antivírus e Antimalware: Todos os dispositivos conectados à rede devem ter software<br>
+          antivírus e antimalware atualizado.</p>
+      </li>
+      <li>
+        <p>Atualizações de Segurança: Aplicar atualizações de segurança e patches regularmente em<br>
+          todos os dispositivos e sistemas de rede.</p>
+      </li>
+    </ul>
+    <p><strong>Políticas de Uso Aceitável:</strong></p>
+    <ul>
+      <li>
+        <p>Uso de Internet: Proibir o acesso a sites e serviços não relacionados ao trabalho durante o<br>
+          horário de expediente.</p>
+      </li>
+      <li>
+        <p>Downloads e Instalações: Restringir downloads e instalações de software somente a<br>
+          aplicações autorizadas pela equipe de TI.</p>
+      </li>
+      <li>
+        <p>Dispositivos Pessoais: Desencorajar o uso de dispositivos pessoais para acesso à rede<br>
+          corporativa. Se necessário, tais dispositivos devem cumprir as políticas de segurança da<br>
+          empresa.</p>
+      </li>
+    </ul>
+    <p><strong>Monitoramento e Auditoria:</strong></p>
+    <ul>
+      <li>
+        <p>Monitoramento Contínuo: Implementar soluções de monitoramento de rede para detectar e<br>
+          responder a atividades suspeitas.</p>
+      </li>
+      <li>
+        <p>Auditorias Regulares: Realizar auditorias regulares de segurança de rede para identificar e<br>
+          corrigir vulnerabilidades.</p>
+      </li>
+      <li>
+        <p>Logs: Manter logs detalhados de acessos e atividades na rede por um período mínimo de 6<br>
+          meses.</p>
+      </li>
+    </ul>
+    <p><strong>Educação e Treinamento:</strong></p>
+    <ul>
+      <li>
+        <p>Treinamento Regular: Oferecer treinamento regular de conscientização sobre segurança<br>
+          cibernética para todos os funcionários.</p>
+      </li>
+      <li>
+        <p>Políticas de Rede: Certificar-se de que todos os funcionários leiam e compreendam as<br>
+          políticas de uso de rede e serviços.</p>
+      </li>
+    </ul>
+    <p><strong>Resposta a Incidentes:</strong></p>
+    <ul>
+      <li>
+        <p>Plano de Resposta a Incidentes: Desenvolver e manter um plano de resposta a incidentes<br>
+          cibernéticos que inclua procedimentos para identificação, contenção, erradicação e<br>
+          recuperação de incidentes.</p>
+      </li>
+      <li>
+        <p>Notificação de Incidentes: Estabelecer um canal claro para notificação imediata de incidentes<br>
+          de segurança à equipe de TI ou responsável de segurança.</p>
+      </li>
+    </ul>
+    <p><strong>Backups e Recuperação de Dados:</strong></p>
+    <ul>
+      <li>
+        <p>Backups Regulares: Realizar backups regulares de dados críticos e armazená-los em locais<br>
+          seguros e separados da rede principal.</p>
+      </li>
+      <li>
+        <p>Testes de Recuperação: Testar regularmente os procedimentos de recuperação de dados<br>
+          para garantir a integridade e disponibilidade dos backups.</p>
+      </li>
+    </ul>
+    <p><strong>Política de Privacidade e Confidencialidade:</strong></p>
+    <ul>
+      <li>
+        <p>Proteção de Dados: Garantir que todas as informações sensíveis e dados dos clientes sejam<br>
+          criptografados em trânsito e em repouso.</p>
+      </li>
+      <li>
+        <p>Acesso Restrito: Restringir o acesso a informações confidenciais apenas a funcionários<br>
+          autorizados.</p>
+      </li>
+      <li>
+        <p>Conformidade: Certificar-se de que as práticas de privacidade e proteção de dados estejam<br>
+          em conformidade com as leis e regulamentos aplicáveis, como a LGPD (Lei Geral de Proteção<br>
+          de Dados) no Brasil.</p>
+      </li>
+    </ul>
+    <h3 id="acesso-a-aplicações-de-rede-rap">Acesso a Aplicações de rede RAP </h3>
+    <p><strong>A.9.4:</strong></p>
+    <p><strong>Autenticação e Autorização:</strong></p>
+    <p><strong>Autenticação Forte:</strong></p>
+    <ul>
+      <li>
+        <p>MFA (Autenticação Multifator): Implementar autenticação multifator para todos os acessos a<br>
+          aplicações de rede. Isso pode incluir uma combinação de senhas, tokens de segurança, ou<br>
+          autenticação biométrica.</p>
+      </li>
+      <li>
+        <p>Credenciais Únicas: Cada usuário deve ter credenciais únicas. O compartilhamento de<br>
+          credenciais é estritamente proibido.</p>
+      </li>
+    </ul>
+    <p><strong>Autorização Baseada em Função:</strong></p>
+    <ul>
+      <li>
+        <p>Princípio do Menor Privilégio: Conceder acesso às aplicações de rede com base no princípio<br>
+          do menor privilégio. Os usuários devem ter apenas as permissões necessárias para realizar<br>
+          suas funções.</p>
+      </li>
+      <li>
+        <p>Revisão de Permissões: Realizar revisões periódicas das permissões de acesso dos usuários<br>
+          para garantir que sejam apropriadas às suas funções atuais.<br>
+          Controle de Acesso</p>
+      </li>
+    </ul>
+    <p><strong>VPN Segura:</strong></p>
+    <ul>
+      <li>
+        <p>Uso Obrigatório de VPN: Todo acesso remoto às aplicações de rede deve ser feito através de<br>
+          uma VPN segura para garantir a criptografia dos dados em trânsito.</p>
+      </li>
+      <li>
+        <p>Segurança de VPN: Utilizar protocolos de segurança modernos (como IPsec ou SSL/TLS) para<br>
+          a configuração da VPN.</p>
+      </li>
+    </ul>
+    <p><strong>Monitoramento e Registro:</strong></p>
+    <ul>
+      <li>
+        <p>Registro de Acessos: Manter logs detalhados de todas as tentativas de acesso e acessos<br>
+          realizados às aplicações de rede.</p>
+      </li>
+      <li>
+        <p>Monitoramento Contínuo: Implementar monitoramento contínuo para detectar atividades<br>
+          suspeitas e responder a possíveis incidentes de segurança.<br>
+          Manutenção e Atualizações</p>
+      </li>
+    </ul>
+    <p><strong>Atualizações Regulares:</strong></p>
+    <ul>
+      <li>
+        <p>Patch Management: Manter todas as aplicações de rede atualizadas com os patches de<br>
+          segurança mais recentes.</p>
+      </li>
+      <li>
+        <p>Verificação de Vulnerabilidades: Realizar verificações periódicas de vulnerabilidades e<br>
+          corrigir imediatamente qualquer falha identificada.</p>
+      </li>
+    </ul>
+    <p><strong>Manutenção Preventiva:</strong></p>
+    <ul>
+      <li>
+        <p>Monitoramento de Desempenho: Monitorar continuamente o desempenho das aplicações<br>
+          de rede para identificar e resolver problemas proativamente.</p>
+      </li>
+      <li>
+        <p>Backups Regulares: Realizar backups regulares das aplicações e dados críticos para garantir a<br>
+          recuperação rápida em caso de falhas.<br>
+          Política de Uso Aceitável</p>
+      </li>
+    </ul>
+    <p><strong>Treinamento de Usuários:</strong></p>
+    <ul>
+      <li>
+        <p>Conscientização de Segurança: Treinar todos os usuários sobre práticas seguras de acesso<br>
+          remoto, incluindo a importância de senhas fortes, reconhecimento de phishing e uso correto<br>
+          de VPNs.</p>
+      </li>
+      <li>
+        <p>Política de Uso: Desenvolver e comunicar claramente uma política de uso aceitável para o<br>
+          acesso a aplicações de rede.</p>
+      </li>
+    </ul>
+    <p><strong>Uso Apropriado de Dispositivos:</strong></p>
+    <ul>
+      <li>
+        <p>Dispositivos Corporativos: Sempre que possível, os acessos a aplicações de rede devem ser<br>
+          realizados a partir de dispositivos corporativos que estejam sob o controle e monitoramento<br>
+          da empresa.</p>
+      </li>
+      <li>
+        <p>Segurança de Dispositivos Pessoais: Se for necessário o uso de dispositivos pessoais, estes<br>
+          devem estar protegidos com software antivírus, firewalls e outras medidas de segurança<br>
+          aprovadas pela empresa.</p>
+      </li>
+    </ul>
+    <h3 id="resposta-a-incidentes">Resposta a Incidentes </h3>
+    <p><strong>Procedimentos de Resposta a Incidentes:</strong></p>
+    <ul>
+      <li>
+        <p>Plano de Resposta: Desenvolver um plano de resposta a incidentes específico para acessos<br>
+          remotos, incluindo identificação, contenção, erradicação e recuperação.</p>
+      </li>
+      <li>
+        <p>Notificação Imediata: Estabelecer um canal de comunicação claro para a notificação imediata<br>
+          de incidentes de segurança relacionados ao acesso remoto.</p>
+      </li>
+    </ul>
+    <p><strong>Revisão Pós-Incidente:</strong></p>
+    <ul>
+      <li>
+        <p>Análise de Incidentes: Após a resolução de um incidente, realizar uma análise detalhada para<br>
+          identificar as causas e implementar medidas preventivas.</p>
+      </li>
+      <li>
+        <p>Atualização de Políticas: Revisar e atualizar as políticas de segurança de acesso remoto com<br>
+          base nas lições aprendidas durante os incidentes.<br>
+          Gestão de Sessões</p>
+      </li>
+    </ul>
+    <p><strong>Tempo de Sessão:</strong></p>
+    <ul>
+      <li>
+        <p>Tempo Máximo de Inatividade: Configurar um tempo máximo de inatividade após o qual os<br>
+          usuários serão automaticamente desconectados das aplicações de rede.</p>
+      </li>
+      <li>
+        <p>Renovação de Sessão: Implementar a renovação periódica das sessões de autenticação para<br>
+          minimizar o risco de sequestro de sessão.</p>
+      </li>
+    </ul>
+    <p><strong>Encerramento Seguro:</strong></p>
+    <ul>
+      <li>
+        <p>Logout Obrigatório: Incentivar e, quando possível, exigir que os usuários façam logout das<br>
+          aplicações de rede quando terminarem suas tarefas.</p>
+      </li>
+      <li>
+        <p>Limitação de Conexões Simultâneas: Restringir o número de conexões simultâneas<br>
+          permitidas por usuário para reduzir o risco de acessos não autorizados.<br>
+          A.11.2 Segurança dos equipamentos:<br>
+          Segurança dos Cabos</p>
+      </li>
+    </ul>
+    <p><strong>Organização e Gestão de Cabos:</strong></p>
+    <ul>
+      <li>
+        <p>Identificação: Todos os cabos devem ser devidamente etiquetados com informações de<br>
+          origem e destino.</p>
+      </li>
+      <li>
+        <p>Organização: Utilizar canaletas, braçadeiras e organizadores de cabos para manter os cabos<br>
+          arrumados e evitar emaranhados.</p>
+      </li>
+      <li>
+        <p>Acesso Restrito: Garantir que os cabos de rede e energia estejam em locais de acesso<br>
+          restrito, apenas para pessoal autorizado.</p>
+      </li>
+    </ul>
+    <p><strong>Proteção Física:</strong></p>
+    <ul>
+      <li>
+        <p>Instalação Correta: Cabos devem ser instalados de maneira a evitar dobras excessivas e<br>
+          danos físicos.</p>
+      </li>
+      <li>
+        <p>Proteção Contra Pisoteio: Evitar que cabos sejam colocados em áreas de passagem onde<br>
+          possam ser pisoteados ou danificados.</p>
+      </li>
+      <li>
+        <p>Isolamento Adequado: Usar isolamento e proteção apropriados para cabos expostos a<br>
+          ambientes potencialmente danosos (temperatura, umidade, etc.).<br>
+          Manutenção de Equipamentos</p>
+      </li>
+    </ul>
+    <p><strong>Plano de Manutenção Preventiva:</strong></p>
+    <ul>
+      <li>
+        <p>Agendamento Regular: Estabelecer um cronograma de manutenção preventiva para todos os<br>
+          equipamentos críticos.</p>
+      </li>
+      <li>
+        <p>Registro de Manutenção: Manter registros detalhados de todas as atividades de manutenção<br>
+          realizadas em cada equipamento.</p>
+      </li>
+      <li>
+        <p>Verificação de Funcionalidade: Realizar verificações periódicas de funcionalidade para<br>
+          garantir que os equipamentos estejam operando corretamente.</p>
+      </li>
+    </ul>
+    <p><strong>Manutenção Corretiva:</strong></p>
+    <ul>
+      <li>
+        <p>Procedimentos Padronizados: Definir procedimentos claros para a identificação, diagnóstico<br>
+          e correção de falhas em equipamentos.</p>
+      </li>
+      <li>
+        <p>Equipe Qualificada: Garantir que apenas técnicos qualificados e autorizados realizem a<br>
+          manutenção corretiva.</p>
+      </li>
+      <li>
+        <p>Peças de Reposição: Manter um estoque adequado de peças de reposição para minimizar o<br>
+          tempo de inatividade.</p>
+      </li>
+    </ul>
+    <h3 id="remoção-dos-ativos">Remoção dos Ativos </h3>
+    <p><strong>Processo de Desativação:</strong></p>
+    <ul>
+      <li>Autorização: Obter autorização da gerência antes de remover qualquer ativo de TI.</li>
+      <li>Documentação: Registrar a remoção de ativos em um sistema de inventário, incluindo<br>
+        motivo da remoção e destino do ativo.</li>
+    </ul>
+    <h3 id="segurança-de-dados">Segurança de Dados </h3>
+    <ul>
+      <li>
+        <p>Destruição de Dados: Garantir que todos os dados sejam completamente apagados ou<br>
+          destruídos antes da remoção de qualquer equipamento de armazenamento.</p>
+      </li>
+      <li>
+        <p>Confirmação: Realizar uma verificação para confirmar que a destruição de dados foi bemsucedida.<br>
+          Reutilização ou Descarte</p>
+      </li>
+    </ul>
+    <p><strong>Avaliação de Reutilização:</strong></p>
+    <ul>
+      <li>
+        <p>Condição do Equipamento: Avaliar a condição e a funcionalidade do equipamento antes de<br>
+          decidir pela reutilização.</p>
+      </li>
+      <li>
+        <p>Atualização e Reparos: Realizar atualizações e reparos necessários para que o equipamento<br>
+          possa ser reutilizado de forma eficaz e segura.</p>
+      </li>
+    </ul>
+    <p><strong>Descarte Seguro:</strong></p>
+    <ul>
+      <li>
+        <p>Conformidade Legal: Descartar equipamentos de acordo com as regulamentações<br>
+          ambientais e de descarte de eletrônicos vigentes.</p>
+      </li>
+      <li>
+        <p>Parcerias com Recicladores: Estabelecer parcerias com empresas de reciclagem certificadas<br>
+          para garantir o descarte seguro e responsável de equipamentos.</p>
+      </li>
+      <li>
+        <p>Registro de Descarte: Manter registros detalhados do descarte de cada equipamento,<br>
+          incluindo data, método e destino final.</p>
+      </li>
+    </ul>
+    <h3 id="equipamentos-sem-monitoração">Equipamentos Sem Monitoração </h3>
+    <p><strong>Identificação e Rastreamento:</strong></p>
+    <ul>
+      <li>
+        <p>Inventário Completo: Manter um inventário atualizado de todos os equipamentos, incluindo<br>
+          aqueles que não estão sob monitoração ativa.</p>
+      </li>
+      <li>
+        <p>Etiquetagem: Etiquetar todos os equipamentos com identificadores únicos para facilitar o<br>
+          rastreamento.</p>
+      </li>
+    </ul>
+    <p><strong>Segurança Física:</strong></p>
+    <ul>
+      <li>
+        <p>Armazenamento Seguro: Guardar equipamentos sem monitoração em locais seguros e<br>
+          trancados, acessíveis apenas a pessoal autorizado.</p>
+      </li>
+      <li>
+        <p>Acesso Restrito: Limitar o acesso a áreas onde equipamentos sem monitoração estão<br>
+          armazenados.</p>
+      </li>
+    </ul>
+    <p><strong>Avaliação Periódica:</strong></p>
+    <ul>
+      <li>
+        <p>Verificação Regular: Realizar verificações periódicas para garantir que equipamentos sem<br>
+          monitoração ainda estejam em boas condições e não tenham sido removidos sem autorização.</p>
+      </li>
+      <li>
+        <p>Reavaliação da Necessidade: Avaliar regularmente a necessidade de manter equipamentos<br>
+          sem monitoração ou integrá-los ao sistema de monitoração</p>
+      </li>
+    </ul>
+    <h2 id="segurança-de-rede">Segurança de rede </h2>
+    <p><strong>A.13.1:</strong></p>
+    <h3 id="controle-da-rede">Controle da Rede </h3>
+    <p>O controle da rede envolve o gerenciamento e a<br>
+      implementação de políticas e dispositivos para controlar o tráfego de rede, garantindo<br>
+      que apenas o tráfego autorizado seja permitido. Isso pode ser alcançado através de<br>
+      firewalls, roteadores, switches e outras tecnologias de controle de acesso à rede (NAC Network Access Control):
+    </p>
+    <ul>
+      <li>
+        <p>Configuração de listas de controle de acesso (ACLs) nos dispositivos de rede para<br>
+          filtrar o tráfego com base em endereços IP, portas e protocolos.</p>
+      </li>
+      <li>
+        <p>Implementação de VLANs (Virtual LANs) para segmentar a rede e isolar diferentes<br>
+          tipos de tráfego.</p>
+      </li>
+      <li>
+        <p>Utilização de firewalls para controlar o tráfego de entrada e saída da rede, além de<br>
+          inspecionar e filtrar o tráfego entre redes internas.</p>
+      </li>
+    </ul>
+    <h3 id="segurança-do-serviço-da-rede">Segurança do Serviço da Rede </h3>
+    <ul>
+      <li>
+        <p>Atualização regular de software e firmware para corrigir vulnerabilidades<br>
+          conhecidas.</p>
+      </li>
+      <li>
+        <p>Implementação de autenticação forte para acessar serviços de rede, como SSH<br>
+          (Secure Shell) e RDP (Remote Desktop Protocol).</p>
+      </li>
+      <li>
+        <p>Configuração de serviços de rede para usar conexões criptografadas, como HTTPS para sites da web e VPN
+          (Virtual Private Network) para acesso remoto seguro.</p>
+      </li>
+      <li>
+        <p>Monitoramento de atividades de rede para detectar e responder a eventos de<br>
+          segurança, como tentativas de acesso não autorizado ou comportamento malicioso.</p>
+      </li>
+    </ul>
+    <h3 id="segregação-de-rede">Segregação de Rede </h3>
+    <p>A segregação de rede é implementada da seguinte froma :</p>
+    <p>dividi uma rede em<br>
+      segmentos separados, geralmente com base em funções, departamentos ou níveis de sensibilidade dos dados.</p>
+    <p><em>Isso ajudara a limitar a propagação de ataques e reduzir o<br>
+        impacto de violações de segurança.</em></p>
+    <ul>
+      <li>
+        <p>Segmentação física usando switches e roteadores para dividir a rede em sub-redes<br>
+          separadas.</p>
+      </li>
+      <li>
+        <p>Implementação de políticas de firewall para controlar o tráfego entre segmentos de<br>
+          rede, permitindo apenas o tráfego autorizado.</p>
+      </li>
+      <li>
+        <p>Utilização de VLANs para isolar diferentes tipos de tráfego, como voz, dados e<br>
+          dispositivos IoT.</p>
+      </li>
+      <li>
+        <p>Implementação de políticas de acesso baseadas em funções (RBAC - Role-Based<br>
+          Access Control) para restringir o acesso a recursos de rede com base nas<br>
+          responsabilidades e privilégios dos usuários.</p>
+      </li>
+    </ul>
+    <h2 id="procedimento-operacionais">Procedimento operacionais </h2>
+    <p><strong>A.12.1:</strong></p>
+    <p>Estabelecer procedimentos operacionais para garantir a eficácia e a conformidade dos<br>
+      processos relacionados à segurança da informação.</p>
+    <ul>
+      <li>
+        <p>Todos os funcionários devem estar cientes dos procedimentos operacionais relacionados<br>
+          à segurança da informação e devem ser treinados regularmente sobre suas<br>
+          responsabilidade</p>
+      </li>
+      <li>
+        <p>Os procedimentos operacionais devem ser documentados e mantidos atualizados,<br>
+          refletindo as melhores práticas e requisitos regulatório</p>
+      </li>
+      <li>
+        <p>Os procedimentos operacionais devem abranger áreas como gerenciamento de acesso,<br>
+          controle de mudanças, gestão de incidentes, backup e recuperação, entre outro</p>
+      </li>
+      <li>
+        <p>As revisões regulares dos procedimentos operacionais devem ser realizadas para garantir<br>
+          sua eficácia contínua e relevância para o ambiente operacional da organizaçã</p>
+      </li>
+      <li>
+        <p>As exceções aos procedimentos operacionais padrão devem ser documentadas,<br>
+          justificadas e aprovadas pelas partes interessadas apropriada</p>
+      </li>
+      <li>
+        <p>A conformidade com os procedimentos operacionais deve ser monitorada regularmente e quaisquer desvios devem
+          ser corrigidos e documentados adequadamente.</p>
+      </li>
+    </ul>
+    <h2 id="poreteção-contra-malware">Poreteção contra malware </h2>
+    <p><strong>A.12.2:</strong></p>
+    <p>Esta política tem como objetivo estabelecer diretrizes e procedimentos para<br>
+      proteger os sistemas de informação da [Nome da Empresa] contra ameaças de vírus,<br>
+      spam e infecções de computadores.</p>
+    <h3 id="controle-de-vírus">Controle de Vírus </h3>
+    <p>-Todos os computadores e dispositivos de armazenamento de dados devem ser<br>
+      equipados com software antivírus atualizado.</p>
+    <ul>
+      <li>
+        <p>Atualizações automáticas do software antivírus devem ser habilitadas em todos os dispositivos.</p>
+      </li>
+      <li>
+        <p>Todos os arquivos baixados da internet, anexos de e-mail e dispositivos externos<br>
+          devem ser verificados quanto a vírus antes de serem abertos ou executados.</p>
+      </li>
+    </ul>
+    <h3 id="controle-de-spam">Controle de Spam </h3>
+    <ul>
+      <li>
+        <p>Um sistema de filtragem de spam deve ser implementado nos servidores de email da empresa.</p>
+      </li>
+      <li>
+        <p>Funcionários devem ser instruídos a relatar e-mails suspeitos ou de phishing<br>
+          imediatamente ao departamento de TI.</p>
+      </li>
+      <li>
+        <p>A conscientização sobre segurança deve ser promovida regularmente para ajudar<br>
+          os funcionários a identificar e-mails de spam.</p>
+      </li>
+    </ul>
+    <h3 id="soluções-para-computadores-infectados">Soluções para Computadores Infectados </h3>
+    <ul>
+      <li>
+        <p>Funcionários devem relatar imediatamente qualquer suspeita de infecção por<br>
+          vírus ao departamento de TI.</p>
+      </li>
+      <li>
+        <p>O departamento de TI deve ter procedimentos claros para isolar e limpar<br>
+          computadores infectados.</p>
+      </li>
+      <li>
+        <p>Regularmente, devem ser realizadas verificações de segurança em todos os<br>
+          sistemas para identificar e resolver quaisquer infecções ou vulnerabilidades.</p>
+      </li>
+    </ul>
+    <p><strong>Responsabilidades:</strong></p>
+    <ul>
+      <li>
+        <p>A equipe de TI é responsável por implementar e manter as medidas de segurança<br>
+          conforme descrito nesta política.</p>
+      </li>
+      <li>
+        <p>Todos os funcionários são responsáveis por seguir as diretrizes estabelecidas<br>
+          nesta política e relatar quaisquer preocupações de segurança ao departamento de TI.</p>
+      </li>
+    </ul>
+    <h2 id="copias-de-segurança-das-infromaçoes">Copias de segurança das infromaçoes </h2>
+    <p><strong>A.12.3:</strong></p>
+    <h3 id="políticas-de-backup">Políticas de Backup </h3>
+    <p><strong>Frequência de Backup:</strong></p>
+    <ul>
+      <li>
+        <p>Diariamente: Realizar backups incrementais para capturar alterações recentes.</p>
+      </li>
+      <li>
+        <p>Semanalmente: Realizar backups completos dos dados críticos.</p>
+      </li>
+    </ul>
+    <p><strong>Localização dos Backups:</strong></p>
+    <p>Armazenar cópias de backup em locais distintos, incluindo pelo menos uma cópia em um local seguro fora do
+      servidor principal (off-site ou em Numvem)</p>
+    <p><strong>Armazenar cópias de backup Interno:</strong></p>
+    <p><strong>RAID 5:</strong></p>
+    <ul>
+      <li>Quantidade mínima de discos : 3</li>
+      <li>HD Storege</li>
+    </ul>
+    <p>Os discos podem ser mudados comforme a necessidade mas devem atender o seguinte parametros:</p>
+    <ul>
+      <li>Armazenamento minimo 2TB</li>
+      <li>HD Storege de no minimo 40TB</li>
+    </ul>
+    <p><strong>Segurança dos Backups:</strong></p>
+    <ul>
+      <li>Utilizar criptografia de disco completo (FDE) com algoritmos robustos, como AES-256.</li>
+    </ul>
+    <h2 id="registro-e-monitoramento">Registro e monitoramento </h2>
+    <p><strong>A.12.3:</strong></p>
+    <h3 id="registro-de-eventos--proteção-de-logs">Registro de Eventos &amp; Proteção de Logs </h3>
+    <p>Os logs, que são os registros de eventos em formato eletrônico, devem ser protegidos contra acesso não<br>
+      autorizado, alteração e exclusão.</p>
+    <p>A integridade dos logs é crucial para garantir a confiabilidade das informações registradas e para a<br>
+      investigação forense em caso de incidentes.</p>
+    <h3 id="controle-de-softwares-operacionais">Controle de Softwares Operacionais </h3>
+    <p><strong>A.12.5:</strong></p>
+    <p>Esta política visa garantir que apenas softwares legítimos e licenciados sejam utilizados. É importante<br>
+      seguir a legislação de propriedade intelectual para adquirir softwares de forma legal.</p>
+    <p>Para o controle algumas medidas devem ser tomadas tais como:</p>
+    <ul>
+      <li>
+        <p>Atualizações regulares de software são essenciais para corrigir vulnerabilidades de segurança<br>
+          conhecidas. Essa política envolve aplicar essas atualizações de forma regular para manter os sistemas<br>
+          protegidos.</p>
+      </li>
+      <li>
+        <p>Realizar auditorias periódicas e monitorar continuamente o uso de softwares ajuda a detectar qualquer<br>
+          atividade suspeita ou não autorizada, mantendo a segurança do ambiente de TI.</p>
+      </li>
+      <li>
+        <p>Manter um inventário atualizado de todos os softwares instalados e configurar os sistemas operacionais<br>
+          de acordo com os padrões de segurança estabelecidos é crucial para garantir que os sistemas estejam<br>
+          protegidos.</p>
+      </li>
+      <li>
+        <p>Implementar medidas de proteção, como antivírus e firewalls, é fundamental para detectar e prevenir a<br>
+          instalação e execução de softwares maliciosos que possam comprometer a segurança dos sistemas.</p>
+      </li>
+      <li>
+        <p>Treinar os usuários sobre as políticas de segurança de software e conscientizá-los sobre os riscos<br>
+          associados ao uso de softwares não autorizados ou não seguros ajuda a manter um ambiente de TI<br>
+          seguro.</p>
+      </li>
+    </ul>
+    <h2 id="restriçoes-para-instalação-de-software">Restriçoes para instalação de software </h2>
+    <p>As restrições para instalação de software em empresas são<br>
+      implementadas para garantir a segurança, conformidade e eficiência dos sistemas de<br>
+      tecnologia da informação.</p>
+    <p><strong>Restrições &amp; Deveres:</strong></p>
+    <ul>
+      <li>Os usuarios devem seguir a <em>Lista de Software Aprovados</em> (uma lista de software<br>
+        aprovado que os funcionários podem instalar)</li>
+    </ul>
+    <p><em>Isso ajuda a garantir que apenas<br>
+        softwares confiáveis e compatíveis com as políticas da empresa sejam<br>
+        utilizados</em></p>
+    <ul>
+      <li>
+        <p>A empresas precisam garantir que todos os<br>
+          softwares instalados estejam devidamente licenciados</p>
+      </li>
+      <li>
+        <p>Os funcionários<br>
+          não têm permissão para instalar software sem a aprovação de um<br>
+          administrador de sistema</p>
+      </li>
+    </ul>
+    <p><em>Ajuda a evitar a instalação de softwares não<br>
+        autorizados que possam representar riscos de segurança ou prejudicar a integridade do sistema.</em></p>
+    <h2 id="vulnerabilidae-tecnica">Vulnerabilidae Tecnica </h2>
+    <p><strong>A.12.6.1:</strong></p>
+    <p>refere-se a uma fraqueza ou falha em um sistema de<br>
+      tecnologia que pode ser explorada por indivíduos mal-intencionados para comprometer a segurança desse sistema.</p>
+    <p><strong>Mitigação:</strong></p>
+    <h3 id="controle-da-rede-1">Controle da Rede </h3>
+    <ul>
+      <li>
+        <p>Configuração de listas de controle de acesso (ACLs) nos dispositivos de rede para<br>
+          filtrar o tráfego com base em endereços IP, portas e protocolos.</p>
+      </li>
+      <li>
+        <p>Implementação de VLANs (Virtual LANs) para segmentar a rede e isolar diferentes<br>
+          tipos de tráfego.</p>
+      </li>
+      <li>
+        <p>Utilização de firewalls para controlar o tráfego de entrada e saída da rede, além de<br>
+          inspecionar e filtrar o tráfego entre redes internas.</p>
+      </li>
+    </ul>
+    <h3 id="segurança-do-serviço-da-rede-1">Segurança do Serviço da Rede </h3>
+    <ul>
+      <li>
+        <p>Atualização regular de software e firmware para corrigir vulnerabilidades<br>
+          conhecidas.</p>
+      </li>
+      <li>
+        <p>Implementação de autenticação forte para acessar serviços de rede, como SSH<br>
+          (Secure Shell) e RDP (Remote Desktop Protocol).</p>
+      </li>
+      <li>
+        <p>Configuração de serviços de rede para usar conexões criptografadas, como HTTPS<br>
+          para sites da web e VPN (Virtual Private Network) para acesso remoto seguro.</p>
+      </li>
+      <li>
+        <p>Monitoramento de atividades de rede para detectar e responder a eventos de<br>
+          segurança, como tentativas de acesso não autorizado ou comportamento malicioso.</p>
+      </li>
+    </ul>
+    <h2 id="segregação-de-rede-1">Segregação de Rede </h2>
+    <ul>
+      <li>
+        <p>Segmentação física usando switches e roteadores para dividir a rede em sub-redes<br>
+          separadas.</p>
+      </li>
+      <li>
+        <p>Implementação de políticas de firewall para controlar o tráfego entre segmentos de<br>
+          rede, permitindo apenas o tráfego autorizado.</p>
+      </li>
+      <li>
+        <p>Utilização de VLANs para isolar diferentes tipos de tráfego, como voz, dados e<br>
+          dispositivos IoT.</p>
+      </li>
+      <li>
+        <p>Implementação de políticas de acesso baseadas em funções (RBAC - Role-Based<br>
+          Access Control) para restringir o acesso a recursos de rede com base nas<br>
+          responsabilidades e privilégios dos usuários.</p>
+      </li>
+    </ul>
+
+  </div>
+
+
+
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/mermaid/8.0.0/mermaid.min.js"></script>
+
+  <script type="module">
+    // TODO: If ZenUML gets integrated into mermaid in the future,
+    //      we can remove the following lines.
+
+
+    var MERMAID_CONFIG = ({ "startOnLoad": false });
+    if (typeof MERMAID_CONFIG !== 'undefined') {
+      MERMAID_CONFIG.startOnLoad = false
+      MERMAID_CONFIG.cloneCssStyles = false
+      MERMAID_CONFIG.theme = "default"
+    }
+
+    mermaid.initialize(MERMAID_CONFIG || {})
+    if (typeof (window['Reveal']) !== 'undefined') {
+      function mermaidRevealHelper(event) {
+        var currentSlide = event.currentSlide
+        var diagrams = currentSlide.querySelectorAll('.mermaid')
+        for (var i = 0; i < diagrams.length; i++) {
+          var diagram = diagrams[i]
+          if (!diagram.hasAttribute('data-processed')) {
+            mermaid.init(null, diagram, () => {
+              Reveal.slide(event.indexh, event.indexv)
+            })
+          }
+        }
+      }
+      Reveal.addEventListener('slidetransitionend', mermaidRevealHelper)
+      Reveal.addEventListener('ready', mermaidRevealHelper)
+      await mermaid.run({
+        nodes: document.querySelectorAll('.mermaid')
+      })
+    } else {
+      await mermaid.run({
+        nodes: document.querySelectorAll('.mermaid')
+      })
+    }
+  </script>
+
+
+
+
+</body>
+
+</html>
