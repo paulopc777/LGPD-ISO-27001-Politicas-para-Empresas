@@ -1,6 +1,5 @@
 # Politica de Segurança de informação
 
-s
 Toda empresa deve se adquar ao regras e padroes,devendo ser adequadamente utilizado e protegido contra **riscos**, **ameaças**, **violações**, **acessos não autorizados** e **danos**.
 É imprescindível, portanto, a adoção de condutas, normas e
 procedimentos padronizados que tenham como objetivo garantir a proteção dos três
