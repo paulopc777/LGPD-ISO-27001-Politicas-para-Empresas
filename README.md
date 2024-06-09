@@ -2,7 +2,7 @@
 
 **Base na ISO 27001.**
 
-## ⇶ [Link Trabalho](https://paulopc777.github.io/LGPD-ISO_Politics/)
+## ⇶ [Link Trabalho](https://paulopc777.github.io/LGPD-ISO-27001-Politicas-para-Empresas/)
 
 ## índice
 
